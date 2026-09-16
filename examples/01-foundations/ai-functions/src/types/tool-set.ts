@@ -4,7 +4,7 @@ import {
   StaticToolResult,
   generateText,
   tool,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import { z } from 'zod';
 
 const myToolSet = {

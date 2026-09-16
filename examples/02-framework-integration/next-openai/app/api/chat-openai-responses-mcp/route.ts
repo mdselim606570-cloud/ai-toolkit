@@ -4,7 +4,7 @@ import {
   streamText,
   UIMessage,
   InferUITools,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 
 export const maxDuration = 30;
 

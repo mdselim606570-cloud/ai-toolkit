@@ -1,5 +1,5 @@
 import { openai } from '@ai-toolkit/openai';
-import { stepCountIs, streamText } from 'ai-toolkit';
+import { stepCountIs, streamText } from '@ai-toolkit/ai';
 import { executeShellCommand } from '../lib/shell-executor';
 import { run } from '../lib/run';
 

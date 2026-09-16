@@ -1,7 +1,7 @@
 'use client';
 
 import { Button, cn } from '@ai-toolkit/shadcn-ui';
-import type { UIMessage } from 'ai-toolkit';
+import type { UIMessage } from '@ai-toolkit/ai';
 import { ArrowDownIcon, DownloadIcon } from 'lucide-react';
 import type { ComponentProps } from 'react';
 import { useCallback } from 'react';

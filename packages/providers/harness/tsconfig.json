@@ -13,10 +13,10 @@
   ],
   "references": [
     {
-      "path": "../../infrastructure/test-server"
+      "path": "../../testing/test-server"
     },
     {
-      "path": "../../validation/provider"
+      "path": "../../foundation/provider"
     }
   ]
 }

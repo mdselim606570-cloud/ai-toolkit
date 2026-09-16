@@ -4,7 +4,7 @@ import {
   generateText,
   tool,
   wrapLanguageModel,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import { z } from 'zod';
 import { run } from '../lib/run';
 

@@ -1,5 +1,5 @@
 import { createAmazonBedrock } from '@ai-toolkit/amazon-bedrock';
-import { stepCountIs, ModelMessage, streamText, tool } from 'ai-toolkit';
+import { stepCountIs, ModelMessage, streamText, tool } from '@ai-toolkit/ai';
 import * as readline from 'node:readline/promises';
 import { z } from 'zod';
 import { run } from '../lib/run';

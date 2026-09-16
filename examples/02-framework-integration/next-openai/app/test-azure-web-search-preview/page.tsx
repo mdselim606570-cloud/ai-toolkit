@@ -5,7 +5,7 @@ import ChatInput from '@/components/chat-input';
 import { ReasoningView } from '@/components/reasoning-view';
 import SourcesView from '@/components/sources-view';
 import { useChat } from '@ai-toolkit/react';
-import { DefaultChatTransport } from 'ai-toolkit';
+import { DefaultChatTransport } from '@ai-toolkit/ai';
 import { AzureWebSearchPreviewMessage } from '@/app/api/chat-azure-web-search-preview/route';
 import AzureWebSearchPreviewView from '@/components/tool/azure-web-search-preview-view';
 

@@ -4,7 +4,7 @@ import ChatInput from '@/components/chat-input';
 import DynamicToolView from '@/components/tool/dynamic-tool-view';
 import OpenAIMCPApprovalView from '@/components/tool/openai-mcp-approval-view';
 import { useChat } from '@ai-toolkit/react';
-import { DefaultChatTransport, UIMessage, isToolUIPart } from 'ai-toolkit';
+import { DefaultChatTransport, UIMessage, isToolUIPart } from '@ai-toolkit/ai';
 import { OpenAIResponsesMCPApprovalMessage } from '../api/chat-openai-responses-mcp-approval/route';
 
 // Custom helper that handles provider-executed tools (like OpenAI MCP)

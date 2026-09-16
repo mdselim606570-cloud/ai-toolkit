@@ -5,7 +5,7 @@ import {
   streamText,
   UIDataTypes,
   UIMessage,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 
 const tools = {
   web_search: openai.tools.webSearch({

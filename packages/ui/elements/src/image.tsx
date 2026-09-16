@@ -1,5 +1,5 @@
 import { cn } from '@ai-toolkit/shadcn-ui';
-import type { Experimental_GeneratedImage } from 'ai-toolkit';
+import type { Experimental_GeneratedImage } from '@ai-toolkit/ai';
 
 export type ImageProps = Experimental_GeneratedImage & {
   className?: string;

@@ -5,7 +5,7 @@ import {
   streamText,
   Tool,
   tool,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import { z } from 'zod';
 import { run } from '../lib/run';
 

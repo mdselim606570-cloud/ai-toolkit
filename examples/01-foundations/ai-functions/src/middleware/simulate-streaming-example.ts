@@ -3,7 +3,7 @@ import {
   simulateStreamingMiddleware,
   streamText,
   wrapLanguageModel,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import { run } from '../lib/run';
 
 run(async () => {

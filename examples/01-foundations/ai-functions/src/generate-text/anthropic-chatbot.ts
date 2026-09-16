@@ -1,5 +1,5 @@
 import { anthropic } from '@ai-toolkit/anthropic';
-import { ModelMessage, generateText } from 'ai-toolkit';
+import { ModelMessage, generateText } from '@ai-toolkit/ai';
 import * as readline from 'node:readline/promises';
 import { weatherTool } from '../tools/weather-tool';
 import { run } from '../lib/run';

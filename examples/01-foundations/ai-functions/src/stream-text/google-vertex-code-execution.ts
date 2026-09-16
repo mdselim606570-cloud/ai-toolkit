@@ -4,7 +4,7 @@ import {
   streamText,
   ToolCallPart,
   ToolResultPart,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import * as process from 'process';
 import { run } from '../lib/run';
 

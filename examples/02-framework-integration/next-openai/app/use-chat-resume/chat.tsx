@@ -1,7 +1,7 @@
 'use client';
 
 import { useChat } from '@ai-toolkit/react';
-import { DefaultChatTransport, type UIMessage } from 'ai-toolkit';
+import { DefaultChatTransport, type UIMessage } from '@ai-toolkit/ai';
 import Link from 'next/link';
 import ChatInput from '@/components/chat-input';
 

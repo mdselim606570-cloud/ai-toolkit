@@ -3,7 +3,7 @@
 import ChatInput from '@/components/chat-input';
 import { zodSchema } from '@ai-toolkit/provider-utils';
 import { UIMessage, useChat } from '@ai-toolkit/react';
-import { DefaultChatTransport } from 'ai-toolkit';
+import { DefaultChatTransport } from '@ai-toolkit/ai';
 import { z } from 'zod';
 
 export default function Chat({

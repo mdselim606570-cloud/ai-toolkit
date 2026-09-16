@@ -7,7 +7,7 @@ import { useChat } from '@ai-toolkit/react';
 import {
   DefaultChatTransport,
   lastAssistantMessageIsCompleteWithApprovalResponses,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 
 export default function TestToolApproval() {
   const { status, sendMessage, messages, addToolApprovalResponse } =

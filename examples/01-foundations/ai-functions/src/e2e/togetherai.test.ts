@@ -4,7 +4,7 @@ import {
   togetherai as provider,
   TogetherAIErrorData,
 } from '@ai-toolkit/togetherai';
-import { APICallError } from 'ai-toolkit';
+import { APICallError } from '@ai-toolkit/ai';
 import {
   createEmbeddingModelWithCapabilities,
   createFeatureTestSuite,

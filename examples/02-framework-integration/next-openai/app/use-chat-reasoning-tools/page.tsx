@@ -2,7 +2,7 @@
 
 import ChatInput from '@/components/chat-input';
 import { useChat } from '@ai-toolkit/react';
-import { DefaultChatTransport } from 'ai-toolkit';
+import { DefaultChatTransport } from '@ai-toolkit/ai';
 import { ReasoningToolsMessage } from '../api/use-chat-reasoning-tools/route';
 
 export default function Chat() {

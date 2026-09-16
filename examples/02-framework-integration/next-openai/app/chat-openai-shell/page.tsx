@@ -4,7 +4,7 @@ import { useChat } from '@ai-toolkit/react';
 import {
   DefaultChatTransport,
   lastAssistantMessageIsCompleteWithApprovalResponses,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import ChatInput from '@/components/chat-input';
 import { OpenAIShellMessage } from '@/agent/openai-shell-agent';
 import ShellView from '@/components/tool/openai-shell-view';

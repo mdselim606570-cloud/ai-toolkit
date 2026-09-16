@@ -8,7 +8,7 @@ import {
   Progress,
   cn,
 } from '@ai-toolkit/shadcn-ui';
-import type { LanguageModelUsage } from 'ai-toolkit';
+import type { LanguageModelUsage } from '@ai-toolkit/ai';
 import type { ComponentProps } from 'react';
 import { createContext, useContext, useMemo } from 'react';
 import { getUsage } from 'tokenlens';

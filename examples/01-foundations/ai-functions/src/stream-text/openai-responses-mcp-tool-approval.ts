@@ -4,7 +4,7 @@ import {
   stepCountIs,
   streamText,
   ToolApprovalResponse,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import * as readline from 'node:readline/promises';
 import { run } from '../lib/run';
 

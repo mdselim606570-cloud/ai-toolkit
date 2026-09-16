@@ -1,5 +1,5 @@
 import { cerebras } from '@ai-toolkit/cerebras';
-import { streamObject } from 'ai-toolkit';
+import { streamObject } from '@ai-toolkit/ai';
 import { z } from 'zod';
 import { run } from '../lib/run';
 

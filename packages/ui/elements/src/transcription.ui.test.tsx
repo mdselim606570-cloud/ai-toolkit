@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
-import type { Experimental_TranscriptionResult as TranscriptionResult } from 'ai-toolkit';
+import type { Experimental_TranscriptionResult as TranscriptionResult } from '@ai-toolkit/ai';
 
 import { Transcription, TranscriptionSegment } from './transcription';
 

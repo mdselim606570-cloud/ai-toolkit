@@ -1,7 +1,7 @@
 import {
   ChatAddToolApproveResponseFunction,
   DynamicToolUIPart,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 
 // Type definitions for MCP output
 type McpOutput = {

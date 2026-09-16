@@ -55,7 +55,7 @@ OPENAI_API_KEY=sk-...
 ANTHROPIC_API_KEY=sk-ant-...
 GOOGLE_GENERATIVE_API_KEY=AI...`;
 
-const usageCode = `import { generateText } from 'ai-toolkit';
+const usageCode = `import { generateText } from '@ai-toolkit/ai';
 import { gateway } from '@ai-toolkit/gateway';
 
 // Use any model
@@ -70,7 +70,7 @@ const { text: text2 } = await generateText({
   prompt: 'Hello, world!',
 });`;
 
-const streamingCode = `import { streamText } from 'ai-toolkit';
+const streamingCode = `import { streamText } from '@ai-toolkit/ai';
 import { gateway } from '@ai-toolkit/gateway';
 
 const result = await streamText({
@@ -82,7 +82,7 @@ for await (const chunk of result.textStream) {
   console.log(chunk);
 }`;
 
-const toolsCode = `import { generateText } from 'ai-toolkit';
+const toolsCode = `import { generateText } from '@ai-toolkit/ai';
 import { gateway } from '@ai-toolkit/gateway';
 
 const { text } = await generateText({

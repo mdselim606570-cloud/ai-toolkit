@@ -1,5 +1,5 @@
 import { openai } from '@ai-toolkit/openai';
-import { ModelMessage, generateId } from 'ai-toolkit';
+import { ModelMessage, generateId } from '@ai-toolkit/ai';
 import {
   createAI,
   createStreamableValue,

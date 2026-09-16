@@ -5,7 +5,7 @@ import {
   createUIMessageStream,
   convertToModelMessages,
   stepCountIs,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import { createMCPClient, ElicitationRequestSchema } from '@ai-toolkit/mcp';
 import { MCPElicitationUIMessage } from './types';
 import { createPendingElicitation } from './elicitation-store';

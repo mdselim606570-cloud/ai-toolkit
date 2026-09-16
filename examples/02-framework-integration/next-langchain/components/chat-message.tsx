@@ -6,7 +6,7 @@ import {
   isReasoningUIPart,
   isFileUIPart,
   isToolUIPart,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import { Reasoning, Text, File, ToolInvocation } from './message-parts';
 import { DataProgress, DataStatus, DataFileStatus } from './data-parts';
 import { type CustomDataMessage } from '../app/types';

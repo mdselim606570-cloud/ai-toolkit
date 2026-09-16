@@ -3,7 +3,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { useChat } from '@ai-toolkit/react';
 import { upload } from '@vercel/blob/client';
-import { FileUIPart } from 'ai-toolkit';
+import { FileUIPart } from '@ai-toolkit/ai';
 import { useRef, useState } from 'react';
 
 export default function Page() {

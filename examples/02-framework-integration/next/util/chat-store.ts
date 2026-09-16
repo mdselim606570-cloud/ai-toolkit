@@ -1,4 +1,4 @@
-import { generateId } from 'ai-toolkit';
+import { generateId } from '@ai-toolkit/ai';
 import { existsSync, mkdirSync } from 'fs';
 import { readdir, readFile, writeFile } from 'fs/promises';
 import path from 'path';

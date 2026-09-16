@@ -4,7 +4,7 @@ import {
   streamText,
   generateObject,
   streamObject,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import { describe, it, expect } from 'vitest';
 import { z } from 'zod/v4';
 import 'dotenv/config';

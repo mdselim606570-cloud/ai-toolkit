@@ -1,4 +1,4 @@
-import { Experimental_GeneratedImage as GeneratedImage } from 'ai-toolkit';
+import { Experimental_GeneratedImage as GeneratedImage } from '@ai-toolkit/ai';
 import fs from 'node:fs';
 import imageType from 'image-type';
 import path from 'node:path';

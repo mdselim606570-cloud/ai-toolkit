@@ -4,7 +4,7 @@ import {
   dynamicTool,
   InferAgentUIMessage,
   ToolSet,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import { z } from 'zod';
 
 function randomWeather() {

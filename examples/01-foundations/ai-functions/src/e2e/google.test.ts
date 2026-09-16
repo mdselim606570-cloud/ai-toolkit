@@ -14,8 +14,8 @@ import {
   createImageModelWithCapabilities,
   defaultChatModelCapabilities,
 } from './feature-test-suite';
-import { wrapLanguageModel } from 'ai-toolkit';
-import { defaultSettingsMiddleware } from 'ai-toolkit';
+import { wrapLanguageModel } from '@ai-toolkit/ai';
+import { defaultSettingsMiddleware } from '@ai-toolkit/ai';
 
 const createChatModel = (
   modelId: string,

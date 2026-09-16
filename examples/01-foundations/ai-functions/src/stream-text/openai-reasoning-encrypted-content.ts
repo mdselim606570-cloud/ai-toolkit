@@ -1,4 +1,4 @@
-import { stepCountIs, streamText, tool } from 'ai-toolkit';
+import { stepCountIs, streamText, tool } from '@ai-toolkit/ai';
 import { z } from 'zod';
 import { run } from '../lib/run';
 import { openai } from '@ai-toolkit/openai';

@@ -1,7 +1,7 @@
 'use client';
 
 import { useChat } from '@ai-toolkit/react';
-import { DefaultChatTransport } from 'ai-toolkit';
+import { DefaultChatTransport } from '@ai-toolkit/ai';
 import { ChatContainer } from '../../components/chat-container';
 import { type CustomDataMessage } from '../types';
 

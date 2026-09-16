@@ -18,18 +18,18 @@ This is a **monorepo** using pnpm workspaces and Turborepo.
 
 | Directory                             | Description                                                                             |
 | ------------------------------------- | --------------------------------------------------------------------------------------- |
-| `packages/core/ai-toolkit`            | Main SDK package (`ai-toolkit` on npm, formerly `ai`)                                   |
-| `packages/validation/provider`        | Provider interface specifications (`@ai-toolkit/provider`)                              |
-| `packages/core/provider-utils`        | Shared utilities for providers and core (`@ai-toolkit/provider-utils`)                  |
-| `packages/core/runtime`               | Browser-safe runtime contracts (`@ai-toolkit/runtime`; no Node builtins)                |
-| `packages/validation/capabilities`    | Model capability declarations (`@ai-toolkit/capabilities`)                              |
+| `packages/ai/core`            | Main SDK package (`ai-toolkit` on npm, formerly `ai`)                                   |
+| `packages/foundation/schema/provider`        | Provider interface specifications (`@ai-toolkit/provider`)                              |
+| `packages/foundation/utils`        | Shared utilities for providers and core (`@ai-toolkit/provider-utils`)                  |
+| `packages/foundation/runtime`               | Browser-safe runtime contracts (`@ai-toolkit/runtime`; no Node builtins)                |
+| `packages/foundation/schema/capabilities`    | Model capability declarations (`@ai-toolkit/capabilities`)                              |
 | `packages/providers/<provider>`       | AI provider implementations (openai, anthropic, google, azure, amazon-bedrock, etc.)    |
-| `packages/adapters/<framework>`       | UI framework integrations (react, vue, svelte, angular, rsc)                            |
+| `packages/integrations/<framework>`       | UI framework integrations (react, vue, svelte, angular, rsc)                            |
 | `packages/ui/elements`                | React chat components (Conversation, Message, PromptInput)                              |
 | `packages/special/<package>`          | Special-purpose packages (gateway, khulnasoft, codemod, devtools)                       |
-| `packages/mcp`                        | Model Context Protocol implementation (`@ai-toolkit/mcp`)                               |
-| `packages/validation/valibot`         | Valibot schema adapter (`@ai-toolkit/valibot`)                                          |
-| `packages/infrastructure/test-server` | Internal test utilities (not published)                                                 |
+| `packages/mcp/core`                        | Model Context Protocol implementation (`@ai-toolkit/mcp`)                               |
+| `packages/foundation/schema/valibot`         | Valibot schema adapter (`@ai-toolkit/valibot`)                                          |
+| `packages/testing/harness/test-server` | Internal test utilities (not published)                                                 |
 | `packages/codemod`                    | ⛔ Removed — moved to `packages/special/codemod` (see `architecture/domain-mapping.md`) |
 | `examples/`                           | Example applications in `01-foundations` … `04-tools` (indexed by `registry.json`)      |
 | `content/`                            | Documentation source files (MDX), consumed by `apps/docs`                               |
@@ -76,7 +76,7 @@ pnpm build          # Build all packages
 
 ### Package-Level Commands
 
-Run these from within a package directory (e.g., `packages/core/ai-toolkit`):
+Run these from within a package directory (e.g., `packages/ai/core`):
 
 | Command            | Description                 |
 | ------------------ | --------------------------- |
@@ -158,13 +158,13 @@ Instead use `parseJSON` or `safeParseJSON` from `@ai-toolkit/provider-utils`.
 - Every public package `exports` map must declare `types`, `import`, `require`, and `default` conditions on the `.` entry.
 - Declare `browser` (and `worker`/`edge` where supported) conditions as aliases of the runtime-neutral build, or omit them when the package is Node-only.
 - Runtime-neutral packages (`core`, `validation`) must not reference Node-only entry points under any condition.
-- Reference example: `packages/core/runtime/package.json`.
+- Reference example: `packages/foundation/runtime/package.json`.
 
 ### Runtime-Neutral Node Import Rule (ADR-004, ADR-008)
 
 - Packages in the `core` and `validation` domains must not import Node builtins (`node:*` or bare like `fs`, `os`) in source, and must not depend on Node builtin packages.
 - Enforcement: `pnpm validate-structure` scans both `dependencies` and source `import` statements for `core`/`validation` packages.
-- Lint (editor/CI feedback, same scope): root `.eslintrc.js` `overrides` rejects `node:*`/bare-builtin imports in `packages/core/**` + `packages/validation/**` shipped source (tests, scripts, fixtures, configs excluded). Lives in root config — not `tools/eslint-config` — because override globs resolve relative to the declaring file. Globals like `process` are intentionally unrestricted; use `globalThis` capability detection instead.
+- Lint (editor/CI feedback, same scope): root `.eslintrc.js` `overrides` rejects `node:*`/bare-builtin imports in `packages/core/**` + `packages/foundation/schema/**` shipped source (tests, scripts, fixtures, configs excluded). Lives in root config — not `tools/eslint-config` — because override globs resolve relative to the declaring file. Globals like `process` are intentionally unrestricted; use `globalThis` capability detection instead.
 - `@ai-toolkit/runtime` is the canonical browser-safe contract module; `createRuntimeContext` provides capability detection rather than assuming Node globals.
 
 ### Package Governance Metadata (ADR-007)

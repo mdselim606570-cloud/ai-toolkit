@@ -1,5 +1,5 @@
 import { google } from '@ai-toolkit/google';
-import { generateText, stepCountIs, tool } from 'ai-toolkit';
+import { generateText, stepCountIs, tool } from '@ai-toolkit/ai';
 import { z } from 'zod';
 import * as fs from 'fs';
 import * as path from 'path';

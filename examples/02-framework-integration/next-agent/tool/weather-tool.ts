@@ -1,4 +1,4 @@
-import { UIToolInvocation, tool } from 'ai-toolkit';
+import { UIToolInvocation, tool } from '@ai-toolkit/ai';
 import { z } from 'zod';
 
 export const weatherTool = tool({

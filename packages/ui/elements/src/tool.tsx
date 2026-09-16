@@ -7,7 +7,7 @@ import {
   CollapsibleTrigger,
   cn,
 } from '@ai-toolkit/shadcn-ui';
-import type { DynamicToolUIPart, ToolUIPart } from 'ai-toolkit';
+import type { DynamicToolUIPart, ToolUIPart } from '@ai-toolkit/ai';
 import {
   CheckCircleIcon,
   ChevronDownIcon,

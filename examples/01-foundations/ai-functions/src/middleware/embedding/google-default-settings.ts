@@ -4,7 +4,7 @@ import {
   defaultEmbeddingSettingsMiddleware,
   embed,
   wrapEmbeddingModel,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import { print } from '../../lib/print';
 import { run } from '../../lib/run';
 

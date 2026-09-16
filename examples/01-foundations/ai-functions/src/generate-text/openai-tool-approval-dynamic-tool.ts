@@ -6,7 +6,7 @@ import {
   stepCountIs,
   ToolApprovalResponse,
   ToolSet,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import * as readline from 'node:readline/promises';
 import { z } from 'zod/v4';
 import { run } from '../lib/run';

@@ -8,7 +8,7 @@ import {
   Badge,
   cn,
 } from '@ai-toolkit/shadcn-ui';
-import type { Tool } from 'ai-toolkit';
+import type { Tool } from '@ai-toolkit/ai';
 import { BotIcon } from 'lucide-react';
 import type { ComponentProps } from 'react';
 import { memo } from 'react';

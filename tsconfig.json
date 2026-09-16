@@ -1,16 +1,16 @@
 {
   "references": [
     {
-      "path": "packages/core/ai-toolkit"
+      "path": "packages/ai/core"
     },
     {
-      "path": "packages/core/provider-utils"
+      "path": "packages/foundation/utils"
     },
     {
-      "path": "packages/core/runtime"
+      "path": "packages/foundation/runtime"
     },
     {
-      "path": "packages/core/gateway"
+      "path": "packages/gateway/core"
     },
     {
       "path": "packages/providers/amazon-bedrock"
@@ -136,52 +136,51 @@
       "path": "packages/providers/xai"
     },
     {
-      "path": "packages/adapters/angular"
+      "path": "packages/integrations/angular"
     },
     {
-      "path": "packages/adapters/langchain"
+      "path": "packages/integrations/langchain"
     },
     {
-      "path": "packages/adapters/llamaindex"
+      "path": "packages/integrations/llamaindex"
     },
     {
-      "path": "packages/adapters/react"
+      "path": "packages/integrations/react"
     },
     {
-      "path": "packages/adapters/rsc"
+      "path": "packages/integrations/rsc"
     },
     {
-      "path": "packages/adapters/svelte"
+      "path": "packages/integrations/svelte"
     },
     {
-      "path": "packages/adapters/vue"
+      "path": "packages/integrations/vue"
     },
     {
-      "path": "packages/special/codemod"
+      "path": "packages/tooling/codemod"
     },
     {
-      "path": "packages/special/devtools"
+      "path": "packages/tooling/devtools"
     },
     {
-      "path": "packages/special/gateway"
     },
     {
-      "path": "packages/special/platform"
+      "path": "packages/foundation/platform"
     },
     {
-      "path": "packages/special/khulnasoft"
+      "path": "packages/foundation/khulnasoft"
     },
     {
-      "path": "packages/validation/capabilities"
+      "path": "packages/foundation/capabilities"
     },
     {
-      "path": "packages/validation/provider"
+      "path": "packages/foundation/provider"
     },
     {
-      "path": "packages/validation/valibot"
+      "path": "packages/foundation/valibot"
     },
     {
-      "path": "packages/infrastructure/test-server"
+      "path": "packages/testing/test-server"
     },
     {
       "path": "packages/ui/design"
@@ -193,7 +192,7 @@
       "path": "packages/ui/shadcn-ui"
     },
     {
-      "path": "packages/mcp"
+      "path": "packages/mcp/core"
     },
     {
       "path": "examples/01-foundations/ai-functions"

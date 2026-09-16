@@ -4,7 +4,7 @@ import {
   createAgentUIStreamResponse,
   UIMessage,
   validateUIMessages,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 
 export async function POST(request: Request) {
   const { messages } = await request.json();

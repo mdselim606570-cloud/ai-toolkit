@@ -14,7 +14,7 @@ import {
   stepCountIs,
   streamObject,
   streamText,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import fs from 'fs';
 import { describe, expect, it, vi } from 'vitest';
 import { z } from 'zod';

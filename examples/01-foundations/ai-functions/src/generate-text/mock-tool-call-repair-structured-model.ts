@@ -4,8 +4,8 @@ import {
   generateText,
   NoSuchToolError,
   tool,
-} from 'ai-toolkit';
-import { MockLanguageModelV3 } from 'ai-toolkit/test';
+} from '@ai-toolkit/ai';
+import { MockLanguageModelV3 } from '@ai-toolkit/ai/test';
 import { z } from 'zod';
 import { run } from '../lib/run';
 

@@ -3,7 +3,7 @@ import {
   createUIMessageStream,
   pipeUIMessageStreamToResponse,
   streamText,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import 'dotenv/config';
 import { createServer } from 'http';
 

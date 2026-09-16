@@ -8,7 +8,7 @@ import {
   UIDataTypes,
   UIMessage,
   validateUIMessages,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import { z } from 'zod';
 
 // Allow streaming responses up to 30 seconds

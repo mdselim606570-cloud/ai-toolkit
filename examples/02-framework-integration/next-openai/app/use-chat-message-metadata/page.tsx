@@ -2,7 +2,7 @@
 
 import ChatInput from '@/components/chat-input';
 import { useChat } from '@ai-toolkit/react';
-import { DefaultChatTransport, UIMessage } from 'ai-toolkit';
+import { DefaultChatTransport, UIMessage } from '@ai-toolkit/ai';
 import { ExampleMetadata } from '@/agent/openai-metadata-agent';
 
 type MyMessage = UIMessage<ExampleMetadata>;

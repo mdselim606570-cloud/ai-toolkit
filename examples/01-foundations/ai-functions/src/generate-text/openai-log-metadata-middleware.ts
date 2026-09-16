@@ -1,6 +1,6 @@
 import { openai } from '@ai-toolkit/openai';
 import { LanguageModelV3Middleware } from '@ai-toolkit/provider';
-import { generateText, wrapLanguageModel } from 'ai-toolkit';
+import { generateText, wrapLanguageModel } from '@ai-toolkit/ai';
 import { run } from '../lib/run';
 
 const logProviderMetadataMiddleware: LanguageModelV3Middleware = {

@@ -1,5 +1,5 @@
 import { openai } from '@ai-toolkit/openai';
-import { ToolLoopAgent, InferAgentUIMessage } from 'ai-toolkit';
+import { ToolLoopAgent, InferAgentUIMessage } from '@ai-toolkit/ai';
 
 export const openaiMCPApprovalAgent = new ToolLoopAgent({
   model: openai.responses('gpt-5'),

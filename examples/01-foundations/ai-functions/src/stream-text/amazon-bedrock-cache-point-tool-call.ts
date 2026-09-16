@@ -1,5 +1,5 @@
 import { bedrock } from '@ai-toolkit/amazon-bedrock';
-import { streamText, tool, ModelMessage } from 'ai-toolkit';
+import { streamText, tool, ModelMessage } from '@ai-toolkit/ai';
 import { z } from 'zod';
 import { run } from '../lib/run';
 

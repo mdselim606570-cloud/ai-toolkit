@@ -4,7 +4,7 @@ import {
   embed,
   embedMany,
   cosineSimilarity,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 
 export interface Route<NAME extends string> {
   name: NAME;

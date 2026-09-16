@@ -30,7 +30,11 @@ import {
   TooltipTrigger,
   cn,
 } from '@ai-toolkit/shadcn-ui';
-import type { ChatStatus, FileUIPart, SourceDocumentUIPart } from 'ai-toolkit';
+import type {
+  ChatStatus,
+  FileUIPart,
+  SourceDocumentUIPart,
+} from '@ai-toolkit/ai';
 import {
   CornerDownLeftIcon,
   ImageIcon,

@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import type { UIMessage } from 'ai-toolkit';
+import type { UIMessage } from '@ai-toolkit/ai';
 import { userEvent } from '@testing-library/user-event';
 
 import {

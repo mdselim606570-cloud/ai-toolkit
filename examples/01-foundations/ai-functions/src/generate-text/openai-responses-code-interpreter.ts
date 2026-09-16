@@ -3,7 +3,7 @@ import {
   type OpenaiResponsesSourceDocumentProviderMetadata,
   type OpenaiResponsesTextProviderMetadata,
 } from '@ai-toolkit/openai';
-import { generateText } from 'ai-toolkit';
+import { generateText } from '@ai-toolkit/ai';
 import { run } from '../lib/run';
 import { downloadOpenaiContainerFile } from '../lib/download-openai-container-file';
 

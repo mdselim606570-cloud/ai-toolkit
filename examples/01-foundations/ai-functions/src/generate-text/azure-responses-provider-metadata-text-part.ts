@@ -2,7 +2,7 @@ import {
   azure,
   type AzureResponsesTextProviderMetadata,
 } from '@ai-toolkit/azure';
-import { generateText } from 'ai-toolkit';
+import { generateText } from '@ai-toolkit/ai';
 import { run } from '../lib/run';
 
 run(async () => {

@@ -5,7 +5,7 @@ import { Response } from '@/components/ai-elements/response';
 import ChatInput from '@/components/chat-input';
 import AnthropicCodeExecutionView from '@/components/tool/anthropic-code-execution-view';
 import { useChat } from '@ai-toolkit/react';
-import { DefaultChatTransport } from 'ai-toolkit';
+import { DefaultChatTransport } from '@ai-toolkit/ai';
 
 export default function ChatAnthropicProgrammaticToolCalling() {
   const { error, status, sendMessage, messages, regenerate } =

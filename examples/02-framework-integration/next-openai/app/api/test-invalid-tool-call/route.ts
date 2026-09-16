@@ -7,11 +7,11 @@ import {
   tool,
   UIDataTypes,
   UIMessage,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import {
   convertArrayToReadableStream,
   MockLanguageModelV3,
-} from 'ai-toolkit/test';
+} from '@ai-toolkit/ai/test';
 import { z } from 'zod';
 
 // Allow streaming responses up to 30 seconds

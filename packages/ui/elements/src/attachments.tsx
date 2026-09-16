@@ -7,7 +7,7 @@ import {
   HoverCardTrigger,
   cn,
 } from '@ai-toolkit/shadcn-ui';
-import type { FileUIPart, SourceDocumentUIPart } from 'ai-toolkit';
+import type { FileUIPart, SourceDocumentUIPart } from '@ai-toolkit/ai';
 import {
   FileTextIcon,
   GlobeIcon,

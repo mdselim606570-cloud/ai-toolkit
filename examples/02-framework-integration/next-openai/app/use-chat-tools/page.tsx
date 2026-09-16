@@ -5,7 +5,7 @@ import { useChat } from '@ai-toolkit/react';
 import {
   DefaultChatTransport,
   lastAssistantMessageIsCompleteWithToolCalls,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import { UseChatToolsMessage } from '../api/use-chat-tools/route';
 
 export default function Chat() {

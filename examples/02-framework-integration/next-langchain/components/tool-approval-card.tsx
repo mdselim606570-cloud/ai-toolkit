@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Shield, Check, X } from 'lucide-react';
-import { UIMessage } from 'ai-toolkit';
+import { UIMessage } from '@ai-toolkit/ai';
 
 /**
  * Tool Approval Card Component

@@ -1,5 +1,5 @@
 import { bedrock } from '@ai-toolkit/amazon-bedrock';
-import { generateText } from 'ai-toolkit';
+import { generateText } from '@ai-toolkit/ai';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 import { run } from '../lib/run';

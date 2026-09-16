@@ -6,7 +6,7 @@ import {
   ButtonGroupText,
   cn,
 } from '@ai-toolkit/shadcn-ui';
-import type { Experimental_SpeechResult as SpeechResult } from 'ai-toolkit';
+import type { Experimental_SpeechResult as SpeechResult } from '@ai-toolkit/ai';
 import {
   MediaControlBar,
   MediaController,

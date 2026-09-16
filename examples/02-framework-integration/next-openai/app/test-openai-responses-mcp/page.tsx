@@ -4,7 +4,7 @@ import ChatInput from '@/components/chat-input';
 import DynamicToolView from '@/components/tool/dynamic-tool-view';
 import OpenAIMCPView from '@/components/tool/openai-mcp-view';
 import { useChat } from '@ai-toolkit/react';
-import { DefaultChatTransport } from 'ai-toolkit';
+import { DefaultChatTransport } from '@ai-toolkit/ai';
 import { OpenAIResponsesMCPMessage } from '../api/chat-openai-responses-mcp/route';
 
 export default function TestOpenAIResponsesMCP() {

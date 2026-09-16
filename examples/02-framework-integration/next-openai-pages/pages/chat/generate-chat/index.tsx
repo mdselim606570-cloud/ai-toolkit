@@ -1,4 +1,4 @@
-import { ModelMessage } from 'ai-toolkit';
+import { ModelMessage } from '@ai-toolkit/ai';
 import { useState } from 'react';
 
 export default function Page() {

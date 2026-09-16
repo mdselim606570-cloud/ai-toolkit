@@ -1,7 +1,7 @@
 'use client';
 
 import { Alert, AlertDescription, Button, cn } from '@ai-toolkit/shadcn-ui';
-import type { ToolUIPart } from 'ai-toolkit';
+import type { ToolUIPart } from '@ai-toolkit/ai';
 import type { ComponentProps, ReactNode } from 'react';
 import { createContext, useContext, useMemo } from 'react';
 

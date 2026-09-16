@@ -2,7 +2,7 @@ import { openai } from '@ai-toolkit/openai';
 import {
   ChatAddToolApproveResponseFunction,
   UIToolInvocation,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 
 export default function LocalShellView({
   invocation,

@@ -1,5 +1,5 @@
 import { openai } from '@ai-toolkit/openai';
-import { generateText, Output } from 'ai-toolkit';
+import { generateText, Output } from '@ai-toolkit/ai';
 import { z as z4 } from 'zod/v4';
 import { print } from '../lib/print';
 import { run } from '../lib/run';

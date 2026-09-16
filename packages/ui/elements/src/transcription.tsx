@@ -2,7 +2,7 @@
 
 import { useControllableState } from '@radix-ui/react-use-controllable-state';
 import { cn } from '@ai-toolkit/shadcn-ui';
-import type { Experimental_TranscriptionResult as TranscriptionResult } from 'ai-toolkit';
+import type { Experimental_TranscriptionResult as TranscriptionResult } from '@ai-toolkit/ai';
 import type { ComponentProps, ReactNode } from 'react';
 import { createContext, useCallback, useContext, useMemo } from 'react';
 

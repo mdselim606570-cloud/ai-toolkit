@@ -1,6 +1,6 @@
 import { render, screen, waitFor } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
-import type { Tool } from 'ai-toolkit';
+import type { Tool } from '@ai-toolkit/ai';
 import { z } from 'zod';
 
 import {

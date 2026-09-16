@@ -4,7 +4,7 @@ import { OpenAIImageGenerationCustomToolMessage } from '@/agent/openai-image-gen
 import ChatInput from '@/components/chat-input';
 import GenerateImageView from '@/components/tool/generate-image-view';
 import { useChat } from '@ai-toolkit/react';
-import { DefaultChatTransport } from 'ai-toolkit';
+import { DefaultChatTransport } from '@ai-toolkit/ai';
 
 export default function TestOpenAIWebSearch() {
   const { status, sendMessage, messages } =

@@ -1,7 +1,7 @@
 import {
   createUIMessageStreamResponse,
   simulateReadableStream,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 
 export async function POST(req: Request) {
   return createUIMessageStreamResponse({

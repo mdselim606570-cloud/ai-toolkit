@@ -1,7 +1,7 @@
 'use client';
 
 import { useChat } from '@ai-toolkit/react';
-import { DefaultChatTransport } from 'ai-toolkit';
+import { DefaultChatTransport } from '@ai-toolkit/ai';
 import ChatInput from '@/components/chat-input';
 import { AzureOpenAICodeInterpreterMessage } from '@/app/api/chat-azure-code-interpreter-annotation-download/route';
 import CodeInterpreterView from '@/components/tool/openai-code-interpreter-view';

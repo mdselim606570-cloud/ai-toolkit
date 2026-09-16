@@ -4,7 +4,7 @@ import {
   tool,
   ToolLoopAgent,
   UIToolInvocation,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import { z } from 'zod';
 
 const weatherTool = tool({

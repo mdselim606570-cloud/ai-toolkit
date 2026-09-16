@@ -11,7 +11,7 @@ import {
   UIDataTypes,
   UIMessage,
   validateUIMessages,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 
 const tools = {
   code_interpreter: azure.tools.codeInterpreter(),

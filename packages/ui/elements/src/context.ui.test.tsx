@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import type { LanguageModelUsage } from 'ai-toolkit';
+import type { LanguageModelUsage } from '@ai-toolkit/ai';
 
 import {
   Context,

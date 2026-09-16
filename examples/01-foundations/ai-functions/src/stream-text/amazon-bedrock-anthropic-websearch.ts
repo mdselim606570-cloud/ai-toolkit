@@ -4,7 +4,7 @@ import {
   streamText,
   ToolCallPart,
   ToolResultPart,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import 'dotenv/config';
 import { run } from '../lib/run';
 

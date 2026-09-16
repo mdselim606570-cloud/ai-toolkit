@@ -10,7 +10,7 @@ import {
   TabsTrigger,
   cn,
 } from '@ai-toolkit/shadcn-ui';
-import type { ToolUIPart } from 'ai-toolkit';
+import type { ToolUIPart } from '@ai-toolkit/ai';
 import { ChevronDownIcon, Code } from 'lucide-react';
 import type { ComponentProps } from 'react';
 

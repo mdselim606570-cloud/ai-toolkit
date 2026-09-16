@@ -1,5 +1,5 @@
 import { createMistral } from '@ai-toolkit/mistral';
-import { generateText } from 'ai-toolkit';
+import { generateText } from '@ai-toolkit/ai';
 import { run } from '../lib/run';
 
 const mistral = createMistral({

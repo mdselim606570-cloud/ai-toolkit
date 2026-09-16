@@ -11,7 +11,7 @@ import {
   JsonToSseTransformStream,
   streamText,
   UIMessage,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import { after } from 'next/server';
 import { createResumableStreamContext } from 'resumable-stream';
 

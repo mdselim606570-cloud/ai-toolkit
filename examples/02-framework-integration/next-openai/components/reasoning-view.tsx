@@ -1,4 +1,4 @@
-import { ReasoningUIPart } from 'ai-toolkit';
+import { ReasoningUIPart } from '@ai-toolkit/ai';
 import {
   Reasoning,
   ReasoningContent,

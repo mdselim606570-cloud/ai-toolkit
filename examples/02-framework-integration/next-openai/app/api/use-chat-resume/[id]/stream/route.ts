@@ -1,5 +1,8 @@
 import { loadStreams } from '@/util/chat-store';
-import { createUIMessageStream, JsonToSseTransformStream } from 'ai-toolkit';
+import {
+  createUIMessageStream,
+  JsonToSseTransformStream,
+} from '@ai-toolkit/ai';
 import { after } from 'next/server';
 import { createResumableStreamContext } from 'resumable-stream';
 

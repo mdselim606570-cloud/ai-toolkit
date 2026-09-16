@@ -1,4 +1,4 @@
-import { createUIMessageStreamResponse, UIMessage } from 'ai-toolkit';
+import { createUIMessageStreamResponse, UIMessage } from '@ai-toolkit/ai';
 import { NextResponse } from 'next/server';
 
 import { ChatOpenAI } from '@langchain/openai';

@@ -6,7 +6,7 @@ import {
   UIMessageStreamWriter,
   getStaticToolName,
   isStaticToolUIPart,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import { HumanInTheLoopUIMessage } from './types';
 
 // Approval string to be shared across frontend and backend

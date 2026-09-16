@@ -1,5 +1,5 @@
-import { streamText, simulateReadableStream } from 'ai-toolkit';
-import { MockLanguageModelV3 } from 'ai-toolkit/test';
+import { streamText, simulateReadableStream } from '@ai-toolkit/ai';
+import { MockLanguageModelV3 } from '@ai-toolkit/ai/test';
 import { LanguageModelV3StreamPart } from '@ai-toolkit/provider';
 import { run } from '../lib/run';
 

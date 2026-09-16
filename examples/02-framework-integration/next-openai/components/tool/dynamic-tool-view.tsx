@@ -1,4 +1,4 @@
-import type { DynamicToolUIPart } from 'ai-toolkit';
+import type { DynamicToolUIPart } from '@ai-toolkit/ai';
 
 export default function WeatherWithApprovalView({
   invocation,

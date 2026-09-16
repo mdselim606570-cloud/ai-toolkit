@@ -1,5 +1,5 @@
 import { openai, OpenAIResponsesProviderOptions } from '@ai-toolkit/openai';
-import { APICallError, streamText, UserModelMessage } from 'ai-toolkit';
+import { APICallError, streamText, UserModelMessage } from '@ai-toolkit/ai';
 import { run } from '../lib/run';
 
 run(async () => {

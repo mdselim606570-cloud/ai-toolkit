@@ -5,7 +5,7 @@ import {
   DefaultChatTransport,
   getStaticToolName,
   isStaticToolUIPart,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import { tools } from '../api/use-chat-human-in-the-loop/tools';
 import {
   APPROVAL,

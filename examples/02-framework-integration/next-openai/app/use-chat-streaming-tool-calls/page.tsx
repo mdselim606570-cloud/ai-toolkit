@@ -5,7 +5,7 @@ import ChatInput from '@/components/chat-input';
 import {
   DefaultChatTransport,
   lastAssistantMessageIsCompleteWithToolCalls,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import { StreamingToolCallsMessage } from '../api/use-chat-streaming-tool-calls/route';
 
 export default function Chat() {

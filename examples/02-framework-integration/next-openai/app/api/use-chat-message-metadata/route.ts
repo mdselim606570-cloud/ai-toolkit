@@ -1,4 +1,4 @@
-import { createAgentUIStreamResponse, UIMessage } from 'ai-toolkit';
+import { createAgentUIStreamResponse, UIMessage } from '@ai-toolkit/ai';
 import {
   ExampleMetadata,
   openaiMetadataAgent,

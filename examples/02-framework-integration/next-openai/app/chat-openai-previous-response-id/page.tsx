@@ -8,7 +8,7 @@ import { Response } from '@/components/ai-elements/response';
 import ChatInput from '@/components/chat-input';
 import { ReasoningView } from '@/components/reasoning-view';
 import { useChat } from '@ai-toolkit/react';
-import { DefaultChatTransport, ProviderMetadata } from 'ai-toolkit';
+import { DefaultChatTransport, ProviderMetadata } from '@ai-toolkit/ai';
 import { useRef } from 'react';
 
 export default function OpenPreviousResponseIdPage() {

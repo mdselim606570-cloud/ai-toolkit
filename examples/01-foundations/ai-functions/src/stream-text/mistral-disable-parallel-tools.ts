@@ -1,4 +1,4 @@
-import { streamText, tool } from 'ai-toolkit';
+import { streamText, tool } from '@ai-toolkit/ai';
 import { z } from 'zod';
 import { mistral } from '@ai-toolkit/mistral';
 import { run } from '../lib/run';

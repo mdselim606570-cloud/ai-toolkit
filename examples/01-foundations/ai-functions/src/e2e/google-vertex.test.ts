@@ -1,7 +1,7 @@
 import { vertex as vertexNode } from '@ai-toolkit/google-vertex';
 import { vertex as vertexEdge } from '@ai-toolkit/google-vertex/edge';
 import { ImageModelV3, LanguageModelV3 } from '@ai-toolkit/provider';
-import { APICallError, generateImage } from 'ai-toolkit';
+import { APICallError, generateImage } from '@ai-toolkit/ai';
 import 'dotenv/config';
 import { describe, expect, it, vi } from 'vitest';
 import {
@@ -12,8 +12,8 @@ import {
   defaultChatModelCapabilities,
   ModelWithCapabilities,
 } from './feature-test-suite';
-import { wrapLanguageModel } from 'ai-toolkit';
-import { defaultSettingsMiddleware } from 'ai-toolkit';
+import { wrapLanguageModel } from '@ai-toolkit/ai';
+import { defaultSettingsMiddleware } from '@ai-toolkit/ai';
 
 const RUNTIME_VARIANTS = {
   edge: {

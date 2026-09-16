@@ -3,7 +3,7 @@ import {
   createUIMessageStream,
   createUIMessageStreamResponse,
   streamText,
-} from 'ai-toolkit';
+} from '@ai-toolkit/ai';
 import 'dotenv/config';
 import Fastify from 'fastify';
 
