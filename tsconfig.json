@@ -4,6 +4,9 @@
       "path": "packages/ai/core"
     },
     {
+      "path": "packages/ai/generation"
+    },
+    {
       "path": "packages/agents/core"
     },
     {

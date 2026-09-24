@@ -10,7 +10,7 @@ This document defines the implementation plans for the new domains required to d
 
 ## Overview
 
-The AI Toolkit platform vision requires 11 domains beyond the current foundation, AI core, providers, integrations, MCP, gateway, UI, tooling, and testing packages:
+The AI Toolkit platform vision requires 14 domain expansions beyond the current foundation, AI core, providers, integrations, MCP, gateway, UI, tooling, and testing packages:
 
 | Wave | Domain | Status |
 |------|--------|--------|
@@ -28,27 +28,6 @@ The AI Toolkit platform vision requires 11 domains beyond the current foundation
 | Wave 4 | Gateway Expansion (`packages/gateway/*`) | ✅ Implemented |
 | Wave 5 | UI Expansion (`packages/ui/*`) | ✅ Implemented |
 | Wave 5 | Tooling Expansion (`packages/tooling/*`) | ✅ Implemented |
-
----
-
-## Overview
-
-The AI Toolkit platform vision covers 11 domains beyond the current foundation, AI core, providers, integrations, MCP, gateway, UI, tooling, and testing packages:
-
-1. **AI Expansion** (`packages/ai/*`) - generation, multimodal, reasoning, structured ✅
-2. **Agent Platform** (`packages/agents/*`) - core, loop, planner, teams, delegation, skills, harness ✅
-3. **Tool Platform** (`packages/tools/*`) - core, registry, execution, approval, permissions, discovery ✅
-4. **Workflow Engine** (`packages/workflow/*`) - core, engine, durable, scheduler, events, queue ✅
-5. **Context Management** (`packages/context/*`) - core, window, compression, summarization, runtime, routing ✅
-6. **Memory System** (`packages/memory/*`) - core, short-term, long-term, semantic, episodic, storage ✅
-7. **Retrieval Layer** (`packages/retrieval/*`) - core, embeddings, vector, reranking, indexing, rag ✅
-8. **Sandbox Runtime** (`packages/sandbox/*`) - core, execution, filesystem, network, isolation ✅
-9. **Evaluation Engine** (`packages/evals/*`) - core, datasets, scorers, experiments, benchmarks, regression ✅
-10. **Observability** (`packages/observability/*`) - telemetry, tracing, metrics, logging, cost, replay ✅
-11. **Security Layer** (`packages/security/*`) - auth, rbac, policy, secrets, audit, isolation ✅
-12. **Gateway Expansion** (`packages/gateway/*`) - core, router, load-balancer ✅
-13. **UI Expansion** (`packages/ui/*`) - elements, design, shadcn-ui, studio ✅
-14. **Tooling Expansion** (`packages/tooling/*`) - codemod, devtools, cli, codegen ✅
 
 ---
 
