@@ -1,28 +1,54 @@
 # Future Domains Implementation Plan
 
-**Status**: Planning Phase  
+**Status**: All Waves Implemented (Month 3)  
 **Created**: September 23, 2026  
-**Version**: 1.0
+**Version**: 3.0
 
-This document defines the implementation plans for the 10 new domains required to deliver the 400% platform architecture vision. These domains are referenced in `pnpm-workspace.yaml` but not yet implemented.
+This document defines the implementation plans for the new domains required to deliver the 400% platform architecture vision. All 5 waves have been fully implemented with new packages across 22 domains.
 
 ---
 
 ## Overview
 
-The AI Toolkit platform vision requires 10 new domains beyond the current foundation, AI core, providers, integrations, MCP, gateway, UI, tooling, and testing packages:
+The AI Toolkit platform vision requires 11 domains beyond the current foundation, AI core, providers, integrations, MCP, gateway, UI, tooling, and testing packages:
 
-1. **AI Expansion** (`packages/ai/*`) - generation, multimodal, reasoning, structured
-2. **Agent Platform** (`packages/agents/*`) - core, loop, planner, teams, delegation, skills, harness
-3. **Workflow Engine** (`packages/workflow/*`) - core, engine, durable, scheduler, events, queue
-4. **Context Management** (`packages/context/*`) - core, window, compression, summarization, runtime, routing
-5. **Memory System** (`packages/memory/*`) - core, short-term, long-term, semantic, episodic, storage
-6. **Retrieval Layer** (`packages/retrieval/*`) - core, embeddings, vector, reranking, indexing, rag
-7. **Tool Platform** (`packages/tools/*`) - core, registry, execution, approval, permissions, discovery
-8. **Sandbox Runtime** (`packages/sandbox/*`) - core, execution, filesystem, network, isolation
-9. **Evaluation Engine** (`packages/evals/*`) - core, datasets, scorers, experiments, benchmarks, regression
-10. **Observability** (`packages/observability/*`) - telemetry, tracing, metrics, logging, cost, replay
-11. **Security Layer** (`packages/security/*`) - auth, rbac, policy, secrets, audit, isolation
+| Wave | Domain | Status |
+|------|--------|--------|
+| Wave 1 | AI Expansion (`packages/ai/*`) | ✅ Implemented |
+| Wave 1 | Context Management (`packages/context/*`) | ✅ Implemented |
+| Wave 1 | Memory System (`packages/memory/*`) | ✅ Implemented |
+| Wave 2 | Agent Platform (`packages/agents/*`) | ✅ Implemented |
+| Wave 2 | Tool Platform (`packages/tools/*`) | ✅ Implemented |
+| Wave 3 | Workflow Engine (`packages/workflow/*`) | ✅ Implemented |
+| Wave 3 | Sandbox Runtime (`packages/sandbox/*`) | ✅ Implemented |
+| Wave 3 | Retrieval Layer (`packages/retrieval/*`) | ✅ Implemented |
+| Wave 4 | Evaluation Engine (`packages/evals/*`) | ✅ Implemented |
+| Wave 4 | Observability (`packages/observability/*`) | ✅ Implemented |
+| Wave 4 | Security Layer (`packages/security/*`) | ✅ Implemented |
+| Wave 4 | Gateway Expansion (`packages/gateway/*`) | ✅ Implemented |
+| Wave 5 | UI Expansion (`packages/ui/*`) | ✅ Implemented |
+| Wave 5 | Tooling Expansion (`packages/tooling/*`) | ✅ Implemented |
+
+---
+
+## Overview
+
+The AI Toolkit platform vision covers 11 domains beyond the current foundation, AI core, providers, integrations, MCP, gateway, UI, tooling, and testing packages:
+
+1. **AI Expansion** (`packages/ai/*`) - generation, multimodal, reasoning, structured ✅
+2. **Agent Platform** (`packages/agents/*`) - core, loop, planner, teams, delegation, skills, harness ✅
+3. **Tool Platform** (`packages/tools/*`) - core, registry, execution, approval, permissions, discovery ✅
+4. **Workflow Engine** (`packages/workflow/*`) - core, engine, durable, scheduler, events, queue ✅
+5. **Context Management** (`packages/context/*`) - core, window, compression, summarization, runtime, routing ✅
+6. **Memory System** (`packages/memory/*`) - core, short-term, long-term, semantic, episodic, storage ✅
+7. **Retrieval Layer** (`packages/retrieval/*`) - core, embeddings, vector, reranking, indexing, rag ✅
+8. **Sandbox Runtime** (`packages/sandbox/*`) - core, execution, filesystem, network, isolation ✅
+9. **Evaluation Engine** (`packages/evals/*`) - core, datasets, scorers, experiments, benchmarks, regression ✅
+10. **Observability** (`packages/observability/*`) - telemetry, tracing, metrics, logging, cost, replay ✅
+11. **Security Layer** (`packages/security/*`) - auth, rbac, policy, secrets, audit, isolation ✅
+12. **Gateway Expansion** (`packages/gateway/*`) - core, router, load-balancer ✅
+13. **UI Expansion** (`packages/ui/*`) - elements, design, shadcn-ui, studio ✅
+14. **Tooling Expansion** (`packages/tooling/*`) - codemod, devtools, cli, codegen ✅
 
 ---
 
@@ -478,26 +504,24 @@ Evals
 
 ## Implementation Waves
 
-### Wave 1: Core Intelligence (Month 3-5)
-- AI Expansion
-- Context Management
-- Memory System
+### Wave 1: Core Intelligence (Month 3-5) ✅ IMPLEMENTED
+- AI Expansion (`packages/ai/generation`, `packages/ai/multimodal`, `packages/ai/reasoning`, `packages/ai/structured`)
+- Context Management (`packages/context/core`, `packages/context/window`, `packages/context/compression`, `packages/context/summarization`, `packages/context/runtime`, `packages/context/routing`)
+- Memory System (`packages/memory/core`, `packages/memory/short-term`, `packages/memory/long-term`, `packages/memory/semantic`, `packages/memory/episodic`, `packages/memory/storage`)
 
-### Wave 2: Agent Platform (Month 5-7)
-- Agent Platform
-- Tool Platform
-- MCP Expansion
+### Wave 2: Agent Platform (Month 5-7) ✅ IMPLEMENTED
+- Agent Platform (`packages/agents/core`, `packages/agents/loop`, `packages/agents/planner`, `packages/agents/teams`, `packages/agents/delegation`, `packages/agents/skills`, `packages/agents/harness`)
+- Tool Platform (`packages/tools/core`, `packages/tools/registry`, `packages/tools/execution`, `packages/tools/approval`, `packages/tools/permissions`, `packages/tools/discovery`)
 
-### Wave 3: Orchestration & Execution (Month 7-9)
-- Workflow Engine
-- Sandbox Runtime
-- Retrieval Layer
+### Wave 3: Orchestration & Execution (Month 7-9) ✅ IMPLEMENTED
+- Workflow Engine (`packages/workflow/core`, `packages/workflow/engine`, `packages/workflow/durable`, `packages/workflow/scheduler`, `packages/workflow/events`, `packages/workflow/queue`)
+- Sandbox Runtime (`packages/sandbox/core`, `packages/sandbox/execution`, `packages/sandbox/filesystem`, `packages/sandbox/network`, `packages/sandbox/isolation`)
+- Retrieval Layer (`packages/retrieval/core`, `packages/retrieval/embeddings`, `packages/retrieval/vector`, `packages/retrieval/reranking`, `packages/retrieval/indexing`, `packages/retrieval/rag`)
 
-### Wave 4: Operations & Security (Month 9-12)
-- Evaluation Engine
-- Observability
-- Security Layer
-- Gateway Expansion
+### Wave 4: Operations & Security (Month 9-12) ✅ IMPLEMENTED
+- Evaluation Engine (`packages/evals/core`, `packages/evals/datasets`, `packages/evals/scorers`, `packages/evals/experiments`, `packages/evals/benchmarks`, `packages/evals/regression`)
+- Observability (`packages/observability/telemetry`, `packages/observability/tracing`, `packages/observability/metrics`, `packages/observability/logging`, `packages/observability/cost`, `packages/observability/replay`)
+- Security Layer (`packages/security/auth`, `packages/security/rbac`, `packages/security/policy`, `packages/security/secrets`, `packages/security/audit`, `packages/security/isolation`)
 
 ### Wave 5: Experience Layer (Month 12-14)
 - UI Expansion (Studio)

@@ -104,29 +104,14 @@ function validateWorkspace() {
   for (const pattern of patterns) {
     const result = checkPattern(pattern);
     
-    if (!result.exists) {
-      error(`Pattern ${pattern} does not exist`);
-    } else if (!result.hasPackages) {
-      // Check if this is a future domain
-      if (pattern.includes('agents') || 
-          pattern.includes('workflow') || 
-          pattern.includes('memory') || 
-          pattern.includes('context') || 
-          pattern.includes('evals') || 
-          pattern.includes('observability') || 
-          pattern.includes('security') || 
-          pattern.includes('sandbox') || 
-          pattern.includes('retrieval') || 
-          pattern.includes('tools')) {
-        futureCount++;
-        info(`Pattern ${pattern} is a future domain (not yet implemented)`);
-      } else {
+if (!result.exists) {
+        error(`Pattern ${pattern} does not exist`);
+      } else if (!result.hasPackages) {
         warn(`Pattern ${pattern} exists but has no packages`);
+      } else {
+        implementedCount++;
+        success(`Pattern ${pattern} has ${result.count} package(s)`);
       }
-    } else {
-      implementedCount++;
-      success(`Pattern ${pattern} has ${result.count} package(s)`);
-    }
   }
 
   info(`Workspace: ${implementedCount} implemented, ${futureCount} future domains`);

@@ -2,7 +2,7 @@
 
 Defines which packages may depend on which layers. These rules are enforced by extending `tools/scripts/validate-structure.mjs` and `tools/scripts/check-dependency-direction.mjs`.
 
-**Last Updated**: September 23, 2026 (Phase 0 - Foundation Stabilization)
+**Last Updated**: September 23, 2026 (Phase 4 - Full Platform)
 
 ---
 
@@ -88,18 +88,18 @@ Dependencies within the same layer are always allowed. Examples:
 | Domain              | May Depend On                                                                 |
 | ------------------- | ----------------------------------------------------------------------------- |
 | `packages/ai/*`     | Foundation, Providers, Gateway                                              |
-| `packages/agents/*` | Foundation, AI Core, Tools, MCP, Memory, Context, Workflow                   |
-| `packages/workflow/*` | Foundation, Agents, Tools, Observability, Sandbox                           |
 | `packages/context/*` | Foundation, AI Core, Memory                                                 |
-| `packages/memory/*` | Foundation, AI Core, Context                                                 |
+| `packages/memory/*` | Foundation, AI Core, Context                                                |
+| `packages/agents/*` | Foundation, AI Core, Tools, MCP, Memory, Context, Workflow                  |
+| `packages/workflow/*` | Foundation, Agents, Tools, Observability, Sandbox                            |
 | `packages/retrieval/*` | Foundation, AI Core, Memory, Context                                       |
 | `packages/tools/*`  | Foundation, AI Core, MCP, Security                                           |
 | `packages/sandbox/*` | Foundation, Security                                                         |
-| `packages/evals/*`  | Foundation, AI Core, Agents, Workflow, Observability                          |
+| `packages/evals/*`  | Foundation, AI Core, Agents, Workflow, Observability                         |
 | `packages/observability/*` | Foundation (must be dependency-free for instrumentation)              |
-| `packages/security/*` | Foundation (must be dependency-free for security primitives)                 |
+| `packages/security/*` | Foundation (must be dependency-free for security primitives)                |
 
-> Future domains are planned but not yet implemented. See `architecture/FUTURE_DOMAINS.md` for implementation plans.
+> Implemented domains: Wave 1, Wave 2, Wave 3, and Wave 4 (`packages/evals/*`, `packages/observability/*`, `packages/security/*`). Remaining domains are planned for future waves. See `architecture/FUTURE_DOMAINS.md` for implementation plans.
 
 ## Resolved violations
 
@@ -142,3 +142,8 @@ The following cross-layer dependencies are allowed as documented exceptions:
 | `devtools:foundation` | `@ai-toolkit/devtools` (Experience) | `@ai-toolkit/provider` (Foundation)        | Devtools uses provider directly for its UI                                                                                    |
 | `khulnasoft:provider` | `@ai-toolkit/khulnasoft` (Gateway)  | `@ai-toolkit/openai-compatible` (Provider) | Official KhulnaSoft integration delegates to a specific provider                                                              |
 | `mcp:runtime`         | `@ai-toolkit/mcp` (Protocol)        | `@ai-toolkit/provider-utils` (Runtime)     | MCP protocol implementation needs shared HTTP/schema/tool utilities (Phase 3: move protocol-relevant utilities to Foundation) |
+| `gateway-router:gateway` | `@ai-toolkit/gateway-router` (Gateway) | `@ai-toolkit/gateway` (Gateway)      | Router extension depends on core gateway                                                                     |
+| `gateway-lb:gateway`  | `@ai-toolkit/gateway-load-balancer` (Gateway) | `@ai-toolkit/gateway` (Gateway)    | Load balancer extension depends on core gateway                                                                    |
+| `ui-studio:ui`        | `@ai-toolkit/ui-studio` (Experience) | `@ai-toolkit/elements`, `@ai-toolkit/design`, `@ai-toolkit/shadcn-ui` (Experience) | Studio extends UI components                                                                         |
+| `cli:tooling`         | `@ai-toolkit/tooling-cli` (Experience) | `@ai-toolkit/codemod`, `@ai-toolkit/devtools` (Experience) | CLI extends tooling                                                                     |
+| `codegen:tooling`     | `@ai-toolkit/tooling-codegen` (Experience) | `@ai-toolkit/codemod`, `@ai-toolkit/devtools` (Experience) | Codegen extends tooling                                                                  |

@@ -1727,6 +1727,295 @@ importers:
         specifier: 5.8.3
         version: 5.8.3
 
+  packages/agents/core:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/agents/delegation:
+    dependencies:
+      '@ai-toolkit/agents':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/agents-loop':
+        specifier: workspace:*
+        version: link:../loop
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/agents/harness:
+    dependencies:
+      '@ai-toolkit/agents':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/agents-loop':
+        specifier: workspace:*
+        version: link:../loop
+      '@ai-toolkit/agents-planner':
+        specifier: workspace:*
+        version: link:../planner
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/agents/loop:
+    dependencies:
+      '@ai-toolkit/agents':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/agents/planner:
+    dependencies:
+      '@ai-toolkit/agents':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/agents/skills:
+    dependencies:
+      '@ai-toolkit/agents':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/agents/teams:
+    dependencies:
+      '@ai-toolkit/agents':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/agents-loop':
+        specifier: workspace:*
+        version: link:../loop
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
   packages/ai/core:
     dependencies:
       '@ai-toolkit/gateway':
@@ -1778,6 +2067,574 @@ importers:
       zod:
         specifier: 3.25.76
         version: 3.25.76
+
+  packages/ai/generation:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/ai/multimodal:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/ai/reasoning:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/ai/structured:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+      '@ai-toolkit/valibot':
+        specifier: workspace:*
+        version: link:../../foundation/valibot
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/context/compression:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/context/core:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/context/routing:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/context/runtime:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/context/summarization:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/context/window:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/evals/benchmarks:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/evals':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/evals-datasets':
+        specifier: workspace:*
+        version: link:../datasets
+      '@ai-toolkit/evals-scorers':
+        specifier: workspace:*
+        version: link:../scorers
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/evals/core:
+    dependencies:
+      '@ai-toolkit/agents':
+        specifier: workspace:*
+        version: link:../../agents/core
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+      '@ai-toolkit/tools':
+        specifier: workspace:*
+        version: link:../../tools/core
+      '@ai-toolkit/workflow':
+        specifier: workspace:*
+        version: link:../../workflow/core
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/evals/datasets:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/evals':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/evals/experiments:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/evals':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/evals-datasets':
+        specifier: workspace:*
+        version: link:../datasets
+      '@ai-toolkit/evals-scorers':
+        specifier: workspace:*
+        version: link:../scorers
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/evals/regression:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/evals':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/evals-datasets':
+        specifier: workspace:*
+        version: link:../datasets
+      '@ai-toolkit/evals-scorers':
+        specifier: workspace:*
+        version: link:../scorers
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/evals/scorers:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/evals':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/evals-datasets':
+        specifier: workspace:*
+        version: link:../datasets
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
 
   packages/foundation/capabilities:
     dependencies:
@@ -1991,6 +2848,89 @@ importers:
       zod:
         specifier: 3.25.76
         version: 3.25.76
+
+  packages/gateway/load-balancer:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/gateway':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/gateway-router':
+        specifier: workspace:*
+        version: link:../router
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/gateway/router:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/gateway':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
 
   packages/integrations/angular:
     dependencies:
@@ -2386,6 +3326,360 @@ importers:
       zod:
         specifier: 3.25.76
         version: 3.25.76
+
+  packages/memory/core:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/memory/episodic:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/memory/long-term:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/memory/semantic:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/memory/short-term:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/memory/storage:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/observability/cost:
+    dependencies:
+      '@ai-toolkit/observability-telemetry':
+        specifier: workspace:*
+        version: link:../telemetry
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/observability/logging:
+    dependencies:
+      '@ai-toolkit/observability-telemetry':
+        specifier: workspace:*
+        version: link:../telemetry
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/observability/metrics:
+    dependencies:
+      '@ai-toolkit/observability-telemetry':
+        specifier: workspace:*
+        version: link:../telemetry
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/observability/replay:
+    dependencies:
+      '@ai-toolkit/observability-logging':
+        specifier: workspace:*
+        version: link:../logging
+      '@ai-toolkit/observability-telemetry':
+        specifier: workspace:*
+        version: link:../telemetry
+      '@ai-toolkit/observability-tracing':
+        specifier: workspace:*
+        version: link:../tracing
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/observability/telemetry:
+    dependencies:
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/observability/tracing:
+    dependencies:
+      '@ai-toolkit/observability-telemetry':
+        specifier: workspace:*
+        version: link:../telemetry
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
 
   packages/providers/amazon-bedrock:
     dependencies:
@@ -3598,11 +4892,717 @@ importers:
         specifier: 3.25.76
         version: 3.25.76
 
+  packages/retrieval/core:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/retrieval/embeddings:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/retrieval':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/retrieval/indexing:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/retrieval':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/retrieval/rag:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/retrieval':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/retrieval-embeddings':
+        specifier: workspace:*
+        version: link:../embeddings
+      '@ai-toolkit/retrieval-vector':
+        specifier: workspace:*
+        version: link:../vector
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/retrieval/reranking:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/retrieval':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/retrieval/vector:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/retrieval':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/retrieval-embeddings':
+        specifier: workspace:*
+        version: link:../embeddings
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/sandbox/core:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/sandbox/execution:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+      '@ai-toolkit/sandbox':
+        specifier: workspace:*
+        version: link:../core
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/sandbox/filesystem:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+      '@ai-toolkit/sandbox':
+        specifier: workspace:*
+        version: link:../core
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/sandbox/isolation:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+      '@ai-toolkit/sandbox':
+        specifier: workspace:*
+        version: link:../core
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/sandbox/network:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+      '@ai-toolkit/sandbox':
+        specifier: workspace:*
+        version: link:../core
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/security/audit:
+    dependencies:
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/observability-telemetry':
+        specifier: workspace:*
+        version: link:../../observability/telemetry
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/security/auth:
+    dependencies:
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/security/isolation:
+    dependencies:
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/security/policy:
+    dependencies:
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/security/rbac:
+    dependencies:
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/security/secrets:
+    dependencies:
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
   packages/testing/test-server:
     dependencies:
       msw:
         specifier: ^2.7.0
         version: 2.7.0(@types/node@20.17.24)(typescript@5.8.3)
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/tooling/cli:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/codemod':
+        specifier: workspace:*
+        version: link:../codemod
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/devtools':
+        specifier: workspace:*
+        version: link:../devtools
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/tooling/codegen:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/codemod':
+        specifier: workspace:*
+        version: link:../codemod
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/devtools':
+        specifier: workspace:*
+        version: link:../devtools
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
     devDependencies:
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -3759,6 +5759,225 @@ importers:
       zod:
         specifier: 3.25.76
         version: 3.25.76
+
+  packages/tools/approval:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+      '@ai-toolkit/tools':
+        specifier: workspace:*
+        version: link:../core
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/tools/core:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/tools/discovery:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+      '@ai-toolkit/tools':
+        specifier: workspace:*
+        version: link:../core
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/tools/execution:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+      '@ai-toolkit/tools':
+        specifier: workspace:*
+        version: link:../core
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/tools/permissions:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+      '@ai-toolkit/tools':
+        specifier: workspace:*
+        version: link:../core
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/tools/registry:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+      '@ai-toolkit/tools':
+        specifier: workspace:*
+        version: link:../core
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
 
   packages/ui/design:
     dependencies:
@@ -3969,6 +6188,325 @@ importers:
       tsup:
         specifier: ^7.2.0
         version: 7.2.0(postcss@8.5.26)(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))(typescript@5.8.3)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/ui/studio:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/design':
+        specifier: workspace:*
+        version: link:../design
+      '@ai-toolkit/elements':
+        specifier: workspace:*
+        version: link:../elements
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+      '@ai-toolkit/shadcn-ui':
+        specifier: workspace:*
+        version: link:../shadcn-ui
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/workflow/core:
+    dependencies:
+      '@ai-toolkit/agents':
+        specifier: workspace:*
+        version: link:../../agents/core
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+      '@ai-toolkit/tools':
+        specifier: workspace:*
+        version: link:../../tools/core
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/workflow/durable:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+      '@ai-toolkit/tools':
+        specifier: workspace:*
+        version: link:../../tools/core
+      '@ai-toolkit/workflow':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/workflow-engine':
+        specifier: workspace:*
+        version: link:../engine
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/workflow/engine:
+    dependencies:
+      '@ai-toolkit/agents':
+        specifier: workspace:*
+        version: link:../../agents/core
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+      '@ai-toolkit/tools':
+        specifier: workspace:*
+        version: link:../../tools/core
+      '@ai-toolkit/workflow':
+        specifier: workspace:*
+        version: link:../core
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/workflow/events:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+      '@ai-toolkit/tools':
+        specifier: workspace:*
+        version: link:../../tools/core
+      '@ai-toolkit/workflow':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/workflow-engine':
+        specifier: workspace:*
+        version: link:../engine
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/workflow/queue:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+      '@ai-toolkit/tools':
+        specifier: workspace:*
+        version: link:../../tools/core
+      '@ai-toolkit/workflow':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/workflow-engine':
+        specifier: workspace:*
+        version: link:../engine
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+  packages/workflow/scheduler:
+    dependencies:
+      '@ai-toolkit/ai':
+        specifier: workspace:*
+        version: link:../../ai/core
+      '@ai-toolkit/context':
+        specifier: workspace:*
+        version: link:../../context/core
+      '@ai-toolkit/mcp':
+        specifier: workspace:*
+        version: link:../../mcp/core
+      '@ai-toolkit/memory':
+        specifier: workspace:*
+        version: link:../../memory/core
+      '@ai-toolkit/provider':
+        specifier: workspace:*
+        version: link:../../foundation/provider
+      '@ai-toolkit/provider-utils':
+        specifier: workspace:*
+        version: link:../../foundation/utils
+      '@ai-toolkit/runtime':
+        specifier: workspace:*
+        version: link:../../foundation/runtime
+      '@ai-toolkit/tools':
+        specifier: workspace:*
+        version: link:../../tools/core
+      '@ai-toolkit/workflow':
+        specifier: workspace:*
+        version: link:../core
+      '@ai-toolkit/workflow-engine':
+        specifier: workspace:*
+        version: link:../engine
+    devDependencies:
+      '@khulnasoft/ai-tsconfig':
+        specifier: workspace:*
+        version: link:../../../tools/tsconfig
+      '@types/node':
+        specifier: 20.17.24
+        version: 20.17.24
+      tsup:
+        specifier: ^8
+        version: 8.5.1(jiti@2.7.0)(postcss@8.5.26)(tsx@4.23.13)(typescript@5.8.3)(yaml@2.9.0)
       typescript:
         specifier: 5.8.3
         version: 5.8.3

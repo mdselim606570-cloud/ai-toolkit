@@ -22,19 +22,18 @@ const CURRENT_DOMAINS = [
   'mcp',
   'tooling',
   'testing',
-];
-const FUTURE_DOMAINS = [
   'agents',
+  'tools',
   'workflow',
   'memory',
   'context',
+  'sandbox',
+  'retrieval',
   'evals',
   'observability',
   'security',
-  'sandbox',
-  'retrieval',
-  'tools',
 ];
+const FUTURE_DOMAINS = [];
 const EXPECTED_DOMAINS = [...CURRENT_DOMAINS, ...FUTURE_DOMAINS];
 const NODE_BUILTINS = new Set([
   ...builtinModules,
