@@ -44,7 +44,7 @@ export function createMemoryManager(): MemoryManager {
     store: entry => store.set({ ...entry, id: entry.id ?? `mem_${++counter}` }),
     retrieve: id => store.get(id),
     delete: id => store.delete(id),
-    search: query => [...store.values()].filter(e => e.content.includes(query)),
+    search: query => store.list().filter(e => e.content.includes(query)),
     list: () => store.list(),
   };
 }
