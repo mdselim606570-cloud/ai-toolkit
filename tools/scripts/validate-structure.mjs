@@ -12,16 +12,30 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '../..');
 const PACKAGES = path.join(ROOT, 'packages');
-const EXPECTED_DOMAINS = [
-  'core',
+const CURRENT_DOMAINS = [
+  'foundation',
+  'ai',
+  'gateway',
   'providers',
-  'adapters',
+  'integrations',
   'ui',
   'mcp',
-  'special',
-  'validation',
-  'infrastructure',
+  'tooling',
+  'testing',
 ];
+const FUTURE_DOMAINS = [
+  'agents',
+  'workflow',
+  'memory',
+  'context',
+  'evals',
+  'observability',
+  'security',
+  'sandbox',
+  'retrieval',
+  'tools',
+];
+const EXPECTED_DOMAINS = [...CURRENT_DOMAINS, ...FUTURE_DOMAINS];
 const NODE_BUILTINS = new Set([
   ...builtinModules,
   ...builtinModules.map(name => `node:${name}`),
@@ -32,7 +46,7 @@ const PRUNE = new Set(['node_modules', 'dist', '.git', '.next', '.turbo']);
 // are excluded from the builtin scan.
 const TEST_PATH =
   /(\.test(-d)?\.tsx?$|[\\/]__tests__[\\/]|[\\/]test[\\/]|[\\/]__fixtures__[\\/]|[\\/]__snapshots__[\\/]|[\\/]scripts[\\/]|\.config\.(js|mjs|cjs|ts)$)/;
-const RUNTIME_NEUTRAL_DOMAINS = new Set(['core', 'validation']);
+const RUNTIME_NEUTRAL_DOMAINS = new Set(['foundation', 'ai']);
 // Packages that are ESM-only by design (tsup `format: ['esm']` /
 // svelte-package output): no correct `require` target exists, so the
 // ADR-006 `require` condition is waived with a standing warning.
@@ -189,12 +203,18 @@ function collectPackages(dir, domain) {
 
 for (const domain of EXPECTED_DOMAINS) {
   const domainDir = path.join(PACKAGES, domain);
-  if (!fs.existsSync(domainDir))
-    reportError(`Missing domain directory: packages/${domain}`);
-  else if (!fs.statSync(domainDir).isDirectory())
+  if (!fs.existsSync(domainDir)) {
+    // Future domains are not yet implemented - warn instead of error
+    if (FUTURE_DOMAINS.includes(domain)) {
+      reportWarning(`Future domain not yet implemented: packages/${domain} (see architecture/FUTURE_DOMAINS.md)`);
+    } else {
+      reportError(`Missing domain directory: packages/${domain}`);
+    }
+  } else if (!fs.statSync(domainDir).isDirectory()) {
     reportError(`Expected directory but found file: packages/${domain}`);
-  else if (!fs.existsSync(path.join(domainDir, 'README.md')))
+  } else if (!fs.existsSync(path.join(domainDir, 'README.md'))) {
     reportWarning(`Missing README.md in packages/${domain}`);
+  }
   collectPackages(domainDir, domain);
 }
 

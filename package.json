@@ -116,7 +116,6 @@
     "onlyBuiltDependencies": [
       "@nestjs/core",
       "@sentry/cli",
-      "esbuild",
       "lmdb",
       "msgpackr-extract",
       "msw",

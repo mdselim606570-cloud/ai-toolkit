@@ -16,8 +16,8 @@
     "start:docs": "node scripts/start-one.mjs docs",
     "start:www": "node scripts/start-one.mjs www",
     "start:studio": "node scripts/start-one.mjs studio",
-    "lint": "eslint \"./{docs,www,studio}/**/*.ts*\" --ignore-pattern \"*.tsbuildinfo\" --ignore-pattern \"**/.next/**\" --ignore-pattern \"**/dist/**\"",
-    "type-check": "tsc -p www/tsconfig.json --noEmit && tsc -p studio/tsconfig.json --noEmit && tsc -p docs/tsconfig.json --noEmit",
+    "lint": "pnpm exec eslint \"./{docs,www,studio}/**/*.ts*\" --ignore-pattern \"*.tsbuildinfo\" --ignore-pattern \"**/.next/**\" --ignore-pattern \"**/dist/**\"",
+    "type-check": "cd www && pnpm exec tsc --noEmit && cd ../studio && pnpm exec tsc --noEmit && cd ../docs && pnpm exec tsc --noEmit",
     "clean": "del-cli docs/.next www/.next studio/.next docs/.source",
     "postinstall": "cd docs && fumadocs-mdx",
     "translate": "cd docs && geistdocs translate"

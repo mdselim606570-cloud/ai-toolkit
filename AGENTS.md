@@ -12,29 +12,37 @@ The **AI TOOLKIT** by KhulnaSoft is a TypeScript/JavaScript SDK for building AI-
 
 ## Repository Structure
 
-This is a **monorepo** using pnpm workspaces and Turborepo.
+This is a **monorepo** using pnpm workspaces and Turborepo with domain-based package organization.
 
 ### Key Directories
 
 | Directory                             | Description                                                                             |
 | ------------------------------------- | --------------------------------------------------------------------------------------- |
-| `packages/ai/core`            | Main SDK package (`ai-toolkit` on npm, formerly `ai`)                                   |
-| `packages/foundation/schema/provider`        | Provider interface specifications (`@ai-toolkit/provider`)                              |
+| `packages/ai/core`            | Main SDK package (`ai-toolkit` on npm)                                                  |
+| `packages/foundation/provider`        | Provider interface specifications (`@ai-toolkit/provider`)                              |
 | `packages/foundation/utils`        | Shared utilities for providers and core (`@ai-toolkit/provider-utils`)                  |
 | `packages/foundation/runtime`               | Browser-safe runtime contracts (`@ai-toolkit/runtime`; no Node builtins)                |
-| `packages/foundation/schema/capabilities`    | Model capability declarations (`@ai-toolkit/capabilities`)                              |
+| `packages/foundation/capabilities`    | Model capability declarations (`@ai-toolkit/capabilities`)                              |
+| `packages/foundation/valibot`         | Valibot schema adapter (`@ai-toolkit/valibot`)                                          |
+| `packages/foundation/khulnasoft`       | KhulnaSoft integration (`@ai-toolkit/khulnasoft`)                                      |
+| `packages/foundation/platform`         | Platform registry and domain model (`@ai-toolkit/platform`)                              |
 | `packages/providers/<provider>`       | AI provider implementations (openai, anthropic, google, azure, amazon-bedrock, etc.)    |
-| `packages/integrations/<framework>`       | UI framework integrations (react, vue, svelte, angular, rsc)                            |
+| `packages/integrations/<framework>`   | UI framework integrations (react, vue, svelte, angular, rsc, langchain, llamaindex)      |
+| `packages/gateway/core`              | Gateway and routing (`@ai-toolkit/gateway`)                                             |
+| `packages/mcp/core`                   | Model Context Protocol implementation (`@ai-toolkit/mcp`)                               |
 | `packages/ui/elements`                | React chat components (Conversation, Message, PromptInput)                              |
-| `packages/special/<package>`          | Special-purpose packages (gateway, khulnasoft, codemod, devtools)                       |
-| `packages/mcp/core`                        | Model Context Protocol implementation (`@ai-toolkit/mcp`)                               |
-| `packages/foundation/schema/valibot`         | Valibot schema adapter (`@ai-toolkit/valibot`)                                          |
-| `packages/testing/harness/test-server` | Internal test utilities (not published)                                                 |
-| `packages/codemod`                    | ⛔ Removed — moved to `packages/special/codemod` (see `architecture/domain-mapping.md`) |
+| `packages/ui/design`                  | Design tokens and presets (`@ai-toolkit/design`)                                        |
+| `packages/ui/shadcn-ui`               | UI primitives (`@ai-toolkit/shadcn-ui`)                                                |
+| `packages/tooling/codemod`           | Codemod tools (`@ai-toolkit/codemod`)                                                  |
+| `packages/tooling/devtools`          | Developer tools (`@ai-toolkit/devtools`)                                               |
+| `packages/testing/test-server`       | Internal test utilities (not published)                                                 |
 | `examples/`                           | Example applications in `01-foundations` … `04-tools` (indexed by `registry.json`)      |
 | `content/`                            | Documentation source files (MDX), consumed by `apps/docs`                               |
 | `contributing/`                       | Contributor guides and documentation                                                    |
 | `tools/`                              | Internal tooling (`scripts/`, `eslint-config`, `tsconfig`, …)                           |
+| `apps/`                               | Public-facing applications (docs, www, studio)                                         |
+
+> See `architecture/domain-mapping.md` for the complete canonical package-to-domain mapping.
 
 ### Core Package Dependencies
 

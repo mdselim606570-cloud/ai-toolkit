@@ -1,6 +1,8 @@
 # Dependency Rules
 
-Phase 1 deliverable. Defines which packages may depend on which layers. These rules are enforced by extending `tools/scripts/validate-structure.mjs`.
+Defines which packages may depend on which layers. These rules are enforced by extending `tools/scripts/validate-structure.mjs` and `tools/scripts/check-dependency-direction.mjs`.
+
+**Last Updated**: September 23, 2026 (Phase 0 - Foundation Stabilization)
 
 ---
 
@@ -67,29 +69,37 @@ Dependencies within the same layer are always allowed. Examples:
 | Gateway            | Experience/Tooling | Gateway doesn't depend on UI or tooling                           |
 | Foundation         | Any higher layer   | Foundation must be the root of the dependency tree                |
 
-## Domain-to-layer mapping
+## Domain-to-layer mapping (Current)
 
 | Domain                  | Directory                                            | Layer              |
 | ----------------------- | ---------------------------------------------------- | ------------------ |
-| Core SDK                | `packages/core/ai-toolkit`                           | Runtime            |
-| Core gateway/routing    | `packages/core/gateway`                              | Runtime            |
-| Core utilities          | `packages/core/provider-utils`                       | Runtime            |
-| Runtime contracts       | `packages/core/runtime`                              | Foundation         |
-| Provider interfaces     | `packages/validation/provider`                       | Foundation         |
-| Capability declarations | `packages/validation/capabilities`                   | Foundation         |
-| Schema validation       | `packages/validation/valibot`                        | Runtime            |
-| Providers               | `packages/providers/*`                               | Provider           |
-| MCP                     | `packages/mcp`                                       | Protocol           |
-| Gateway (special)       | `packages/special/khulnasoft`                        | Gateway            |
-| Dev tools               | `packages/special/devtools`                          | Experience/Tooling |
-| Codemods                | `packages/special/codemod`                           | Experience/Tooling |
-| Platform registry       | `packages/special/platform`                          | Experience/Tooling |
-| Framework adapters      | `packages/adapters/react, vue, angular, svelte, rsc` | Integration        |
-| Ecosystem bridges       | `packages/adapters/langchain, llamaindex`            | Integration        |
-| UI elements             | `packages/ui/elements`                               | Experience/Tooling |
-| UI design               | `packages/ui/design`                                 | Experience/Tooling |
-| UI primitives           | `packages/ui/shadcn-ui`                              | Experience/Tooling |
-| Infrastructure          | `packages/infrastructure/test-server`                | Infrastructure     |
+| Foundation              | `packages/foundation/*`                              | Foundation         |
+| AI Core                 | `packages/ai/core`                                    | Runtime            |
+| Gateway                 | `packages/gateway/core`                               | Runtime            |
+| Providers               | `packages/providers/*`                                | Provider           |
+| MCP                     | `packages/mcp/core`                                   | Protocol           |
+| Integrations            | `packages/integrations/*`                             | Integration        |
+| Tooling                 | `packages/tooling/*`                                  | Experience/Tooling |
+| UI                      | `packages/ui/*`                                      | Experience/Tooling |
+| Testing                 | `packages/testing/*`                                  | Infrastructure     |
+
+## Domain-to-layer mapping (Future - 400% Platform)
+
+| Domain              | May Depend On                                                                 |
+| ------------------- | ----------------------------------------------------------------------------- |
+| `packages/ai/*`     | Foundation, Providers, Gateway                                              |
+| `packages/agents/*` | Foundation, AI Core, Tools, MCP, Memory, Context, Workflow                   |
+| `packages/workflow/*` | Foundation, Agents, Tools, Observability, Sandbox                           |
+| `packages/context/*` | Foundation, AI Core, Memory                                                 |
+| `packages/memory/*` | Foundation, AI Core, Context                                                 |
+| `packages/retrieval/*` | Foundation, AI Core, Memory, Context                                       |
+| `packages/tools/*`  | Foundation, AI Core, MCP, Security                                           |
+| `packages/sandbox/*` | Foundation, Security                                                         |
+| `packages/evals/*`  | Foundation, AI Core, Agents, Workflow, Observability                          |
+| `packages/observability/*` | Foundation (must be dependency-free for instrumentation)              |
+| `packages/security/*` | Foundation (must be dependency-free for security primitives)                 |
+
+> Future domains are planned but not yet implemented. See `architecture/FUTURE_DOMAINS.md` for implementation plans.
 
 ## Resolved violations
 
@@ -97,7 +107,7 @@ Both Phase 1 dependency-direction violations have been resolved:
 
 | From                  | To                           | Resolution                                                                                                           |
 | --------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| `ai-toolkit`          | `@ai-toolkit/gateway`        | Moved `@ai-toolkit/gateway` to `packages/core/gateway/`; classified as Runtime layer (intra-layer with `ai-toolkit`) |
+| `ai-toolkit`          | `@ai-toolkit/gateway`        | Moved `@ai-toolkit/gateway` to `packages/gateway/core/`; classified as Runtime layer (intra-layer with `ai-toolkit`) |
 | `@ai-toolkit/valibot` | `@ai-toolkit/provider-utils` | Reclassified `@ai-toolkit/valibot` as Runtime layer (depends on provider-utils for schema types)                     |
 
 ### Schema type migration (Phase 3, partial)
@@ -120,10 +130,11 @@ Dependency direction is validated by:
 4. `tools/scripts/check-dependency-direction.mjs` also scans TypeScript/JavaScript `import` statements in source files for cross-layer violations
 5. `tools/scripts/arch-inspect.mjs` — `pnpm arch:inspect` provides a quick overview of the architecture state
 6. `tools/scripts/generate-capability-matrix.mjs` — `pnpm arch:capabilities` generates the machine-readable capability matrix
+7. `tools/scripts/check-architecture-sync.mjs` — validates documentation-implementation consistency (Phase 0)
 
 ### Documented exceptions
 
-The following cross-layer dependencies are allowed as documented exceptions (Phase 3 targets to eliminate where possible):
+The following cross-layer dependencies are allowed as documented exceptions:
 
 | Exception key         | From                                | To                                         | Rationale                                                                                                                     |
 | --------------------- | ----------------------------------- | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
