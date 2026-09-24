@@ -32,7 +32,7 @@ export function createContextStore(): ContextStore {
       const entries = [...store.values()];
       return filter?.metadata
         ? entries.filter(c =>
-            Object.entries(filter.metadata).every(
+            Object.entries(filter.metadata!).every(
               ([key, value]) => c.metadata[key] === value,
             ),
           )
