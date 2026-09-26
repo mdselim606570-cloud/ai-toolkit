@@ -19,28 +19,31 @@ export interface WindowManager {
 }
 
 export function createWindowManager(config: WindowConfig): WindowManager {
-  let totalTokens = 0;
+  let totalTokens = config.maxTokens;
   let usedTokens = 0;
-  const state: WindowState = {
-    totalTokens: config.maxTokens,
-    usedTokens: 0,
-    availableTokens: config.maxTokens,
-    overflow: false,
-  };
+  let availableTokens = config.maxTokens;
+  let overflow = false;
+
+  const getState = (): WindowState => ({
+    totalTokens,
+    usedTokens,
+    availableTokens,
+    overflow,
+  });
 
   return {
     configure: newConfig => {
       Object.assign(config, newConfig);
-      state.totalTokens = config.maxTokens;
-      state.availableTokens = config.maxTokens - usedTokens;
+      totalTokens = config.maxTokens;
+      availableTokens = config.maxTokens - usedTokens;
     },
-    getState: () => ({ ...state }),
+    getState,
     trim: tokens => {
       usedTokens = Math.max(0, usedTokens - tokens);
-      state.usedTokens = usedTokens;
-      state.availableTokens = config.maxTokens - usedTokens;
-      state.overflow = state.usedTokens > config.maxTokens;
+      totalTokens = config.maxTokens;
+      availableTokens = config.maxTokens - usedTokens;
+      overflow = usedTokens > config.maxTokens;
     },
-    checkOverflow: () => state.overflow,
+    checkOverflow: () => overflow,
   };
 }

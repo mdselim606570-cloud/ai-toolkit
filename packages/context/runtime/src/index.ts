@@ -21,12 +21,12 @@ export interface RuntimeContextManager {
   listContexts(): readonly RuntimeContext[];
 }
 
-export function createRuntimeTracker(): RuntimeTracker {
+export function createRuntimeContextManager(): RuntimeContextManager {
   const contexts = new Map<string, RuntimeContext>();
   let counter = 0;
 
-  return {
-    start: executionId => {
+  const tracker = {
+    start: (executionId: string) => {
       contexts.set(executionId, {
         executionId,
         state: {},
@@ -34,24 +34,20 @@ export function createRuntimeTracker(): RuntimeTracker {
         contextStack: [],
       });
     },
-    track: (executionId, state) => {
+    track: (executionId: string, state: Record<string, unknown>) => {
       const ctx = contexts.get(executionId);
       if (ctx) {
         Object.assign(ctx.state, state);
       }
     },
-    end: executionId => {
+    end: (executionId: string) => {
       const ctx = contexts.get(executionId);
       if (ctx) {
         contexts.set(executionId, { ...ctx, endTime: Date.now() });
       }
     },
-    getContext: executionId => contexts.get(executionId),
+    getContext: (executionId: string) => contexts.get(executionId),
   };
-}
-
-export function createRuntimeContextManager(): RuntimeContextManager {
-  const tracker = createRuntimeTracker();
 
   return {
     createContext: () => {

@@ -14,7 +14,7 @@ export interface Isolator {
 }
 
 export interface IsolationEngine {
-  createIsolation(config: IsolationConfig): Isolator;
+  createIsolation(config: IsolationConfig): Promise<Isolator>;
   enforce(resourceLimits: { memoryMB: number; cpuSeconds: number }): void;
 }
 

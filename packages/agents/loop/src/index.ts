@@ -23,7 +23,7 @@ export interface AgentLoop {
 export interface LoopEngine {
   registerLoop(name: string, loop: AgentLoop): void;
   getLoop(name: string): AgentLoop | undefined;
-  runLoop(name: string, input: string): AsyncIterable<LoopStep>;
+  runLoop(name: string, input: string): Promise<AsyncIterable<LoopStep>>;
 }
 
 export function createLoopEngine(): LoopEngine {

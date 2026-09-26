@@ -14,7 +14,7 @@ export interface Harness {
 export interface HarnessEngine {
   registerHarness(name: string, harness: Harness): void;
   getHarness(name: string): Harness | undefined;
-  execute(input: string): Promise<string>;
+  execute(input: string, providerId?: string): Promise<string>;
 }
 
 export function createHarnessEngine(): HarnessEngine {
