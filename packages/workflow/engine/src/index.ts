@@ -23,9 +23,11 @@ export function createWorkflowEngineManager(): WorkflowEngineManager {
   const engines = new Map<string, WorkflowEngineRuntime>();
 
   return {
-    createEngine: (name) => {
+    createEngine: name => {
       const engine: WorkflowEngineRuntime = {
-        execute: async function* () { yield { workflowId: '', stepId: '', status: 'success', output: null }; },
+        execute: async function* () {
+          yield { workflowId: '', stepId: '', status: 'success', output: null };
+        },
         parallelExecute: async () => [],
       };
       engines.set(name, engine);

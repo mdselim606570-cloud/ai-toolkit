@@ -22,11 +22,13 @@ The AI Core layer (Layer 1) provides the main SDK package `ai-toolkit` with high
 ## Dependencies
 
 AI Core may depend on:
+
 - Foundation layer (types, runtime, provider-utils)
 - Provider layer (for provider implementations)
 - Gateway (for routing)
 
 AI Core must not depend on:
+
 - Higher-level domains (agents, workflow, etc.)
 
 See `architecture/DEPENDENCY_RULES.md` for complete dependency rules.

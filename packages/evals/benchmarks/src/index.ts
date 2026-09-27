@@ -21,6 +21,6 @@ export function createBenchmarksEngine(): BenchmarksEngine {
   return {
     registerRunner: (name, runner) => runners.set(name, runner),
     getRunner: name => runners.get(name),
-    run: async (benchmark) => ({...benchmark.results}),
+    run: async benchmark => ({ ...benchmark.results }),
   };
 }

@@ -22,8 +22,9 @@ export function createRegistryEngine(): RegistryEngine {
   const entries: RegistryEntry[] = [];
 
   return {
-    registerEntry: (entry) => entries.push(entry),
+    registerEntry: entry => entries.push(entry),
     discover: async () => [...entries],
-    search: async (query) => entries.filter(e => e.name.includes(query) || e.category.includes(query)),
+    search: async query =>
+      entries.filter(e => e.name.includes(query) || e.category.includes(query)),
   };
 }

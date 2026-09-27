@@ -25,7 +25,7 @@ export function createSchedulerEngine(): SchedulerEngine {
   return {
     registerScheduler: (name, scheduler) => schedulers.set(name, scheduler),
     getScheduler: name => schedulers.get(name),
-    schedule: (schedule) => {
+    schedule: schedule => {
       const scheduler = schedulers.values().next().value;
       if (scheduler) scheduler.schedule(schedule);
     },

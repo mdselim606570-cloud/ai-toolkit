@@ -23,6 +23,11 @@ export function createRAGEngine(): RAGEngine {
   return {
     registerPipeline: (name, pipeline) => pipelines.set(name, pipeline),
     getPipeline: name => pipelines.get(name),
-    run: async (query) => ({ query, retrievedDocs: [], generatedAnswer: '', sources: [] }),
+    run: async query => ({
+      query,
+      retrievedDocs: [],
+      generatedAnswer: '',
+      sources: [],
+    }),
   };
 }

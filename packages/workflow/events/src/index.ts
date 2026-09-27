@@ -24,7 +24,7 @@ export function createEventEngine(): EventEngine {
   const subscribers = new Map<string, EventHandler[]>();
 
   return {
-    publish: async (event) => {
+    publish: async event => {
       const handlers = subscribers.get(event.type) ?? [];
       await Promise.all(handlers.map(h => h(event)));
     },

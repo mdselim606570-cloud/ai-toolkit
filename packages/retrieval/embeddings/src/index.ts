@@ -11,7 +11,10 @@ export type Embedding = {
 
 export interface EmbeddingGenerator {
   generate(text: string, config?: EmbeddingConfig): Promise<Embedding>;
-  generateBatch(texts: string[], config?: EmbeddingConfig): Promise<readonly Embedding[]>;
+  generateBatch(
+    texts: string[],
+    config?: EmbeddingConfig,
+  ): Promise<readonly Embedding[]>;
 }
 
 export interface EmbeddingEngine {
@@ -26,7 +29,7 @@ export function createEmbeddingEngine(): EmbeddingEngine {
   return {
     registerGenerator: (name, generator) => generators.set(name, generator),
     getGenerator: name => generators.get(name),
-    generate: async (text) => ({
+    generate: async text => ({
       id: `emb_${Date.now()}`,
       vector: new Array(1536).fill(0),
       text,

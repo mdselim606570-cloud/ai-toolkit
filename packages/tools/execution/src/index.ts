@@ -7,13 +7,24 @@ export type ExecutionResult = {
 };
 
 export interface AsyncToolExecutor {
-  execute(toolName: string, args: Record<string, unknown>): Promise<ExecutionResult>;
-  executeStream(toolName: string, args: Record<string, unknown>): AsyncIterable<ExecutionResult>;
+  execute(
+    toolName: string,
+    args: Record<string, unknown>,
+  ): Promise<ExecutionResult>;
+  executeStream(
+    toolName: string,
+    args: Record<string, unknown>,
+  ): AsyncIterable<ExecutionResult>;
 }
 
 export interface ExecutionEngine {
-  execute(toolName: string, args: Record<string, unknown>): Promise<ExecutionResult>;
-  executeBatch(tools: readonly { toolName: string; args: Record<string, unknown> }[]): Promise<readonly ExecutionResult[]>;
+  execute(
+    toolName: string,
+    args: Record<string, unknown>,
+  ): Promise<ExecutionResult>;
+  executeBatch(
+    tools: readonly { toolName: string; args: Record<string, unknown> }[],
+  ): Promise<readonly ExecutionResult[]>;
 }
 
 export function createExecutionEngine(): ExecutionEngine {
@@ -24,11 +35,12 @@ export function createExecutionEngine(): ExecutionEngine {
       output: null,
       duration: 0,
     }),
-    executeBatch: async (tools) => tools.map(t => ({
-      toolName: t.toolName,
-      success: true,
-      output: null,
-      duration: 0,
-    })),
+    executeBatch: async tools =>
+      tools.map(t => ({
+        toolName: t.toolName,
+        success: true,
+        output: null,
+        duration: 0,
+      })),
   };
 }

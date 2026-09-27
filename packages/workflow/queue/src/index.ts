@@ -23,7 +23,7 @@ export function createQueueManager(): QueueManager {
   const queues = new Map<string, Queue>();
 
   return {
-    createQueue: (name) => {
+    createQueue: name => {
       const queue: Queue = {
         enqueue: async () => {},
         dequeue: async () => undefined,

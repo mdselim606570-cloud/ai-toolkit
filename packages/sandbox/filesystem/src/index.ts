@@ -21,7 +21,7 @@ export function createSandboxFS(): SandboxFS {
   const mounts = new Map<string, VirtualFileSystem>();
 
   return {
-    mount: (root) => {
+    mount: root => {
       const fs: VirtualFileSystem = {
         readFile: async () => undefined,
         writeFile: async () => {},

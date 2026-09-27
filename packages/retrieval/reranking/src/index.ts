@@ -10,13 +10,21 @@ export type RerankResult = {
 };
 
 export interface Reranker {
-  rerank(query: string, results: readonly RerankResult[], config: RerankConfig): Promise<readonly RerankResult[]>;
+  rerank(
+    query: string,
+    results: readonly RerankResult[],
+    config: RerankConfig,
+  ): Promise<readonly RerankResult[]>;
 }
 
 export interface RerankingEngine {
   registerReranker(name: string, reranker: Reranker): void;
   getReranker(name: string): Reranker | undefined;
-  rerank(query: string, results: readonly RerankResult[], config: RerankConfig): Promise<readonly RerankResult[]>;
+  rerank(
+    query: string,
+    results: readonly RerankResult[],
+    config: RerankConfig,
+  ): Promise<readonly RerankResult[]>;
 }
 
 export function createRerankingEngine(): RerankingEngine {

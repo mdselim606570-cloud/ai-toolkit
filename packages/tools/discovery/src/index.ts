@@ -20,7 +20,7 @@ export interface DiscoveryEngine {
 export function createDiscoveryEngine(): DiscoveryEngine {
   return {
     discover: async () => [],
-    filterByCapability: async (capability) => [],
-    mergeSources: (sources) => sources.flat(),
+    filterByCapability: async capability => [],
+    mergeSources: sources => sources.flat(),
   };
 }

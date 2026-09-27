@@ -26,13 +26,19 @@ export function createPermissionEngine(): PermissionEngine {
   const policies: PermissionPolicy[] = [];
 
   return {
-    check: (permission) => {
-      const policy = policies.find(p => p.rules.some(r => r.resource === permission.resource && r.action === permission.action));
+    check: permission => {
+      const policy = policies.find(p =>
+        p.rules.some(
+          r =>
+            r.resource === permission.resource &&
+            r.action === permission.action,
+        ),
+      );
       return policy?.effect === 'allow';
     },
-    enforce: (policy) => {
+    enforce: policy => {
       policies.push(policy);
     },
-    addPolicy: (policy) => policies.push(policy),
+    addPolicy: policy => policies.push(policy),
   };
 }

@@ -15,15 +15,19 @@ export interface DurableStore {
 export interface DurableEngine {
   persist(data: DurableExecution): Promise<void>;
   restore(executionId: string): Promise<DurableExecution | undefined>;
-  checkpoint(executionId: string, state: Record<string, unknown>): Promise<void>;
+  checkpoint(
+    executionId: string,
+    state: Record<string, unknown>,
+  ): Promise<void>;
 }
 
 export function createDurableEngine(store: DurableStore): DurableEngine {
   return {
     persist: data => store.persist(data),
     restore: id => store.restore(id),
-    checkpoint: (executionId, state) => store.restore(executionId).then(async (exec) => {
-      if (exec) await store.persist({ ...exec, state });
-    }),
+    checkpoint: (executionId, state) =>
+      store.restore(executionId).then(async exec => {
+        if (exec) await store.persist({ ...exec, state });
+      }),
   };
 }

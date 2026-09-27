@@ -29,7 +29,7 @@ export function createTeamOrchestrator(): TeamOrchestrator {
   const teams = new Map<string, Team>();
 
   return {
-    createTeam: (name) => {
+    createTeam: name => {
       const team: Team = {
         addMember: () => {},
         assignTask: () => {},

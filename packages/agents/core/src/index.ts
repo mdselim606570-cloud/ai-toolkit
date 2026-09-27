@@ -42,7 +42,7 @@ export function createAgent(config: AgentConfig): Agent {
   let stepCount = 0;
 
   return {
-    execute: async (input) => {
+    execute: async input => {
       status = 'running';
       stepCount = 0;
       // Agent execution logic

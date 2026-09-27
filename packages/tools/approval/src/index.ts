@@ -25,11 +25,11 @@ export interface ApprovalEngine {
 
 export function createApprovalEngine(): ApprovalEngine {
   return {
-    submit: async (request) => ({
+    submit: async request => ({
       requestId: request.id,
       approved: false,
     }),
-    review: async (requestId) => ({
+    review: async requestId => ({
       requestId,
       approved: true,
     }),

@@ -14,6 +14,7 @@ The Memory System layer provides a comprehensive memory system with short-term, 
 ## Dependencies
 
 Memory may depend on:
+
 - Foundation layer (types, runtime, provider-utils)
 - AI Core (for model abstractions)
 - Context (for context management)

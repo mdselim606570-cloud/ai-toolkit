@@ -24,7 +24,7 @@ export function createTracingEngine(): TracingEngine {
   return {
     registerTracer: (name, tracer) => tracers.set(name, tracer),
     getTracer: name => tracers.get(name),
-    startSpan: async (name) => ({
+    startSpan: async name => ({
       id: `span_${Date.now()}`,
       name,
       startTime: Date.now(),

@@ -14,6 +14,7 @@ The Context Management layer provides context window management with compression
 ## Dependencies
 
 Context may depend on:
+
 - Foundation layer (types, runtime, provider-utils)
 - AI Core (for model abstractions)
 - Memory (for persistent context)

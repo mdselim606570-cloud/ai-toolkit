@@ -22,7 +22,7 @@ export function createEvaluationEngine(): EvaluationEngine {
   return {
     registerEvaluator: (name, evaluator) => evaluators.set(name, evaluator),
     getEvaluator: name => evaluators.get(name),
-    run: async (evaluation) => {
+    run: async evaluation => {
       const evaluator = evaluators.values().next().value;
       if (evaluator) return evaluator.evaluate(evaluation);
       return {};

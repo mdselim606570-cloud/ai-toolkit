@@ -19,7 +19,7 @@ export function createSandboxNetwork(): SandboxNetwork {
   const networks = new Map<string, NetworkManager>();
 
   return {
-    createNetwork: (sandboxId) => {
+    createNetwork: sandboxId => {
       const network: NetworkManager = {
         restrict: () => {},
         isAllowed: () => true,

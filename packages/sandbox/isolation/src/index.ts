@@ -20,7 +20,7 @@ export interface IsolationEngine {
 
 export function createIsolationEngine(): IsolationEngine {
   return {
-    createIsolation: async (config) => {
+    createIsolation: async config => {
       const isolator: Isolator = {
         isolate: async () => {},
         release: async () => {},

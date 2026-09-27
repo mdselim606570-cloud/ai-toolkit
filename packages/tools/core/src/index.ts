@@ -13,7 +13,10 @@ export type ToolResult = {
 
 export interface ToolExecutor {
   execute(tool: Tool, args: Record<string, unknown>): Promise<ToolResult>;
-  executeStream(tool: Tool, args: Record<string, unknown>): AsyncIterable<ToolResult>;
+  executeStream(
+    tool: Tool,
+    args: Record<string, unknown>,
+  ): AsyncIterable<ToolResult>;
 }
 
 export interface ToolRegistry {
@@ -26,7 +29,7 @@ export function createToolRegistry(): ToolRegistry {
   const tools = new Map<string, Tool>();
 
   return {
-    registerTool: (tool) => tools.set(tool.name, tool),
+    registerTool: tool => tools.set(tool.name, tool),
     getTool: name => tools.get(name),
     listTools: () => [...tools.values()],
   };

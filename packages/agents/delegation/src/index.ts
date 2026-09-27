@@ -29,7 +29,7 @@ export function createDelegationEngine(): DelegationEngine {
   return {
     registerDelegator: (name, manager) => delegators.set(name, manager),
     getDelegator: name => delegators.get(name),
-    delegate: async (request) => ({
+    delegate: async request => ({
       taskId: `task_${Date.now()}`,
       assignedTo: request.preferredAgent ?? 'default',
       status: 'pending',

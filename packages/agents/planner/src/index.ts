@@ -29,7 +29,7 @@ export function createPlanningEngine(): PlanningEngine {
   return {
     registerPlanner: (name, planner) => planners.set(name, planner),
     getPlanner: name => planners.get(name),
-    createPlan: async (objective) => {
+    createPlan: async objective => {
       return {
         id: `plan_${Date.now()}`,
         steps: [],

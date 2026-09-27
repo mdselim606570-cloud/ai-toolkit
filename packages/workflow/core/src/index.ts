@@ -11,7 +11,12 @@ export type WorkflowStep = {
   readonly dependencies: readonly string[];
 };
 
-export type WorkflowStatus = 'draft' | 'running' | 'completed' | 'failed' | 'cancelled';
+export type WorkflowStatus =
+  | 'draft'
+  | 'running'
+  | 'completed'
+  | 'failed'
+  | 'cancelled';
 
 export interface WorkflowEngine {
   register(workflow: WorkflowDefinition): void;
@@ -30,13 +35,13 @@ export function createWorkflowEngine(): WorkflowEngine {
   const workflows = new Map<string, WorkflowDefinition>();
 
   return {
-    register: (workflow) => workflows.set(workflow.id, workflow),
+    register: workflow => workflows.set(workflow.id, workflow),
     get: id => workflows.get(id),
-    run: async (id) => {
+    run: async id => {
       const wf = workflows.get(id);
       if (!wf) throw new Error(`Workflow "${id}" not found`);
       return 'completed';
     },
-    cancel: (id) => workflows.delete(id),
+    cancel: id => workflows.delete(id),
   };
 }

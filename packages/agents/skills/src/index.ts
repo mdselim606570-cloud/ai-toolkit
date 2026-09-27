@@ -25,7 +25,7 @@ export function createSkillsEngine(): SkillsEngine {
   return {
     registerManager: (name, manager) => managers.set(name, manager),
     getManager: name => managers.get(name),
-    loadSkill: async (name) => {
+    loadSkill: async name => {
       for (const manager of managers.values()) {
         const skill = await manager.loadSkill(name);
         if (skill) return skill;
